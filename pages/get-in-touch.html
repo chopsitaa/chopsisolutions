@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- apertura fila de logo + nav --> 
+
+    <header>
+        <!-- Navbar -->
+            <img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo">
+            <nav class="navBar">
+                <!-- logo -->
+                <ul class="navBar__ul">
+                    <!-- list items -->
+                    <li class="navBar__ul__li"><a class="navBar_ul__li__a" href="../index.html">Who we are</a></li>
+                    <li class="navBar__ul__li"><a class="navBar_ul__li__a" href="../pages/services.html">Services</a></li>
+                    <li class="navBar__ul__li"><a class="navBar_ul__li__a__ourwork" href="../pages/our-work.html">Our work</a></li>
+                    <li class="navBar__ul__li"><a class="navBar_ul__li__a__contact" href="../pages/get-in-touch.html">Get in touch</a></li>
+                    <li class="navBar__ul__li"><a class="navBar_ul__li__a" href="../pages/join-the-team.html">Join the team</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="getintouch__main">
+        <!-- FORM -->
+        <div class="div__container">    
+            <form class="form" action="form" method="post">
+                <fieldset class="fieldset">
+                    <h1 class="form__h1" id="top">Let's talk!</h1>
+
+                    <!-- labels -->
+                    <div class="labels__container">
+                        <div><label class="label" for="name">Name</label> 
+                            <div><input class="input" type="text" id="name" placeholder="Enter name"></div></div>
+            
+                        <div><label class="label" for="email">Email</label> 
+                            <div><input class="input" type="email" id="email" placeholder="e.g. name@email.com"></div></div>
+        
+                        <div><label class="label" for="phone">Phone</label> 
+                            <div><input class="input" type="tel" id="phone" placeholder="e.g. +48 XXX XXX XXX"></div></div>
+                    
+                        <div><label class="label" for="budget">Budget (optional)</label> 
+                            <div><input class="input" type="text" id="budget" placeholder="e.g. U$D 5.000"></div></div>
+        
+        
+                        <!-- description box -->
+                        <label class="label" for="message">Message</label>
+                        <div>
+                            <textarea class="input" name="message" id="message" cols="40" rows="5" placeholder="Tell us some details about your project"></textarea> 
+                        </div>
+                        
+                        <!-- button to submit  -->
+                        <div class="form__cta">
+                            <a href="../index.html"><button class="form__cta__button">LET'S WORK TOGETHER</button></a>
+                        </div>
+                    </div>
+                </fieldset> 
+            </form>
+        </div>
+    </main>
+    </body>
+
+    <!-- footer GRID --> 
+    <footer class="footer">
+        <div class="container__footer">
+                <div class="container__row1">
+                    <div class="box__footer1">
+                        <div>
+                            <img class="logo__footer" src="../assets/media/chopsionline.jpeg" alt="logo">
+                        </div>
+        
+                        <div>
+                            <p class="footer__text">Better knows no boundaries. <span>We’re proud to be one of the world's best agencies</span></p>
+                        </div>
+                        <div>
+                            <a href="../pages/get-in-touch.html"><button class="footer__cta">PARTNER WITH US</button></a>
+                        </div>
+                    </div>
+        
+                    <div class="box__footer2">
+                        <h4 class="footer__title">Solutions</h4>
+                        <!-- estos href en # tenemos que poner el link de hacia donde quiero q me lleve -->
+                        <ul class="links__footer" >
+                            <li class="links__footer__li"><a class="links__footer__a" href="../pages/get-in-touch.html">Get in touch</a></li>
+                            <li class="links__footer__li"><a class="links__footer__a" href="../pages/our-work.html">Our work</a></li>
+                            <li class="links__footer__li"><a class="links__footer__a" href="../pages/services.html">Services</a></li>
+                            <li class="links__footer__li"><a class="links__footer__a" href="../pages/join-the-team.html">Join the team</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="box__footer3">
+                        <h4 class="footer__title">Social</h4>
+                        <!-- estos href en # tenemos que poner el link de hacia donde quiero q me lleve -->
+                        <div>
+                            <a href="https://www.instagram.com/chopsisolutions/"><img class="icon" src="../assets/media/Instagram.svg" alt="instagram"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/chopsisolutions/"><img class="icon" src="../assets/media/youtube.svg" alt="youtube"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/chopsisolutions/"><img class="icon" src="../assets/media/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- all rights reserved -->
+                <div class="box__copyright">
+                    <p>© 2022 <b>ChopsiSolutions.</b> All rights reserved.</p>
+                </div>
+        </div>
+    </footer>
+
+    <!-- cierro la animacion con javascript  (finjo demencia y sigo)-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
+</body>

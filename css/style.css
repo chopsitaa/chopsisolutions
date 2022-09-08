@@ -1,0 +1,938 @@
+/* ------Configuracion de texto y tamano -------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    font-size: 10px;
+    font-family: 'Poppins';
+}
+
+/* ---------- RESET ----------*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* ------------------------------------------------------------- WHO WE ARE -------------------------------------------------------------*/
+
+
+/* ---------- NAVBAR - flexbox ---------- */
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    z-index: 1100;
+    width: 100%;
+}
+
+/* logo */
+.navLogo{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 1000px;
+    padding: 16px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+
+.navBar__ul__li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.navBar_ul__li__a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    font-size: 16px;
+    background-color: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.navBar_ul__li__a__contact{
+    background-color: aqua;
+    border-radius: 80%;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+/* personalizar en donde estoy parado - who we are en otro color */
+.navBar_ul__li__a__whoweare{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(211, 158, 255);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+
+/* ----------HERO SECTION - flexbox (siento q si le meto grid se me complica +) ----------*/
+
+/* tamano imagen, y ubicacion texto */
+.hero__title{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    padding-top: 12rem;
+    padding-left: 10rem;
+    /* background */
+    background-image: url(../assets/media/hero.svg);
+    background-size: cover;
+    background-position: top center;
+}
+
+
+/* formato del texto */
+.hero__title__h1{
+    width: 80%;
+    font-size: 13rem;
+    color: white;
+    background-color: transparent;
+}
+
+
+/* - MANTRA (nose como ponerle flexbox sin complicarlo mas) -*/
+
+.mantra__text{
+    display: block;
+    width: 80%;
+    text-align: center;
+    margin: 25% auto 25% auto;
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    background-color: transparent;
+}
+
+.mantra__text__frase{
+    color: blueviolet;
+    font-weight: 400;
+}
+
+
+/*---------- PROJECTS - grid --------*/
+
+.projects__ul{
+    min-height: 100vh;
+    margin-bottom: 16px;
+    /* grids */
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "collegevine one colab";
+}
+
+
+/* collegevine */
+.collegevine{
+    grid-area: collegevine;
+    background-image: url(../assets/media/collegevine.png);
+    background-size: cover;
+    background-position: top center;
+    cursor: pointer;
+}
+
+.collegevine h3{
+    color: white;
+    text-align: center;
+    margin-top: 85%;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+
+/* one % */
+.one{
+    grid-area: one;
+    background-image: url(../assets/media/one.png);
+    background-size: cover;
+    background-position: top center;
+    cursor: pointer;
+}
+
+.one h3{
+    color: white;
+    text-align: center;
+    margin-top: 85%;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+
+/* colab */
+.colab{
+    grid-area: colab;
+    background-image: url(../assets/media/colab.png);
+    background-size: cover;
+    background-position: top center;
+    cursor: pointer;
+}
+
+.colab h3{
+    color: white;
+    text-align: center;
+    margin-top: 85%;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+
+/* ------------------------------------------------------------ FOOTER - GRID ------------------------------------------------------------*/
+.footer{
+    width: 100%;
+    padding-top: 80px;
+    background-image: url(../assets/media/wave.svg);
+    background-size: cover;
+    background-position: top center;
+}
+
+/* todo el container */
+.container__footer{
+    max-width: 100%;
+    margin: 50px 100px 0px 100px;
+    align-items: center;
+    justify-items: space-evenly;
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-rows: 0.5fr 0.8fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "container__row1"
+                         "box__copyright"
+}
+
+/* primera fila */
+.container__row1{
+    grid-area: container__row1;
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-items: auto;
+    justify-content: space-between;
+    max-width: 1200px;
+    flex-basis: auto;
+    margin: 8px 8px 0 8px;
+    padding: 8px 8px 0 8px;
+}
+
+
+/* IZQUIERDA */
+/* logo */
+.logo__footer{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 1000px;
+    padding: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+/* texto */
+.footer__text{
+    font-weight: 400;
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+/* cta */
+.footer__cta{
+    margin-top: 24px;
+    background: linear-gradient(90.56deg, #FAA59A -48.18%, #FC90AB -20.24%, #FB9ECF 6.74%, #F8C4C9 34.68%, #E2C4EC 60.7%, #D7CBE9 84.79%, #BDAED2 109.84%, #A7A9E4 136.82%);
+    box-shadow: 0px 12px 24px rgba(18, 38, 63, 0.08);
+    font-weight: 500;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+/* CENTRO */
+/* links */
+.links__footer__li{
+    list-style: none;
+}
+
+.links__footer__a {
+    color: #7a7a7a;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 12px;
+}
+
+/* DERECHA */
+/* social media icons */
+.icon{
+    font-size: 20px;
+    height: 34px;
+    padding: 0 0 8px 25%;
+    justify-content: center;
+}
+
+/* titles */
+.footer__title{
+    margin-bottom: 30px;
+    color: #343434;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* BOTTOM */
+/* all rights reserved */
+.box__copyright{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.box__copyright p{
+    color: #7a7a7a;
+    font-weight: 200;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+
+
+/* ------------------SERVICES (como hago para hacer overlap entre el footer y el bg para q el footer quede adelante?) -----------------------------*/
+
+/* personalizar en donde estoy parado - who we are en otro color */
+.navBar_ul__li__a__services{
+    text-decoration: none;
+    color: rgb(90, 35, 134);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* -servicios q ofrezco GRID -*/
+
+.services__bg{
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* bg */
+    background-image: url(../assets/media/bg1.svg);
+    background-size: cover;
+    background-position: top center;
+    /* font */
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    flex-wrap: wrap;
+    cursor: pointer;
+    /* align */
+    text-align: center;
+}
+
+.contenedor__servicios{
+        /* grids */
+        display: grid;
+        grid-template-rows: 5fr 10fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: ". . ."
+                             "uno dos tres"
+                             "cuatro cinco seis"
+}
+
+
+.uno{
+    grid-area: uno;
+}
+
+.dos{
+    grid-area: dos;
+}
+
+.tres{
+    grid-area: tres;
+}
+
+.cuatro{
+    grid-area: cuatro;
+}
+
+.cinco{
+    grid-area: cinco;
+}
+
+.seis{
+    grid-area: seis;
+}
+
+
+
+
+/* ----------------------------------------------------------------- OUR WORK -------------------------------------------------------------*/
+/* personalizar en donde estoy parado - who we are en otro color */
+.navBar_ul__li__a__ourwork{
+    text-decoration: none;
+    color: rgb(90, 35, 134);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+/* ----------------------------------------------------------------- GET IN TOUCH -------------------------------------------------------------*/
+/* personalizar en donde estoy parado - who we are en otro color */
+.navBar_ul__li__a__getintouch{
+    text-decoration: none;
+    color: rgb(90, 35, 134);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+/* todo el form */
+.form{
+    min-height: 50vh;
+    width: 100%;
+    position: relative;
+    display: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: #7a7a7a;
+    text-decoration: none;
+    margin-left: 100%;
+    margin-bottom: 32px;
+}
+
+/* contenedor */
+.fieldset{
+    min-height: 50vh;
+    width: 50%;
+    display: relative;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 16px;
+    font-weight: 300;
+    color: #7a7a7a;
+    text-decoration: none;
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+/* labels y ubicacion del fieldset dentro del container */
+.labels__container{
+    margin: 24px 0px 0px 200px;
+}
+
+/* titulo lets talk */
+.form__h1{
+    margin-top: 120px;
+    margin-left: 200px;
+}
+
+
+/* button lets work together */
+.form__cta{
+    margin-top: 24px;
+}
+
+.form__cta__button{
+    background: #0cccd2;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    border-color: #0cccd2;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+/* inputs */
+.input{
+    width: 400px;
+    padding: 8px;
+    outline: none;
+    text-align: left;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    border-color: #FFFFFF;
+    border-style: ridge;
+    color: #CACECF;
+}
+
+
+/* bg left */
+.getintouch__main{
+    background-image: url(../assets/media/workwithus2.png);
+    background-size: cover;
+    background-position: left;
+    width: 45%;
+    height: 100vh;
+}
+
+
+/* ----------------------------------------------------------------- JOIN THE TEAM -------------------------------------------------------------*/
+/* personalizar en donde estoy parado - who we are en otro color */
+.navBar_ul__li__a__jointheteam{
+    text-decoration: none;
+    color: rgb(90, 35, 134);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/* bg left */
+.jointheteam__main{
+    background-image: url(../assets/media/jointheteam.png);
+    background-size: cover;
+    background-position: left;
+    width: 45%;
+    height: 100vh;
+}
+
+/* ---------------------------------------------------------------- MEDIA QUERY ---------------------------------------------------------------------*/
+/* ----------------------------------------------who we are ------------------------------------------------*/
+
+
+@media screen and (min-width: 350px) and (max-width: 600px) {
+    /* falta el navbar  */
+
+
+    /* ----------HERO SECTION - flexbox (siento q si le meto grid se me complica +) ----------*/
+
+    /* tamano imagen, y ubicacion texto */
+    .hero__title{
+        /* min-height: 100vh;
+        width: 100%;
+        display: flex; */
+        padding-top: 12rem;
+        padding-left: 8rem;
+        /* background */
+        background-image: url(../assets/media/hero.svg);
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+
+    /* formato del texto */
+    .hero__title__h1{
+        /* width: 80%; */
+        font-size: 60px;
+        color: white;
+        background-color: transparent;
+    }
+
+
+    /* - MANTRA (nose como ponerle flexbox sin complicarlo mas) -*/
+
+    .mantra__text{
+        /* display: block;
+        width: 80%;
+        text-align: center; */
+        margin: 30vh auto;
+        font-size: 28px;
+        /* font-weight: 300;
+        color: black;
+        background-color: transparent; */
+    }
+
+    /* .mantra__text__frase{
+        color: blueviolet;
+        font-weight: 400;
+    } */
+
+
+    /*---------- PROJECTS - grid --------*/
+
+    .projects__ul{
+        /* min-height: 100vh; */
+        margin-bottom: 16px;
+        /* grids */
+        /* display: grid; */
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "collegevine"
+                             "one"
+                             "colab"
+    }
+
+
+    /* collegevine */
+    .collegevine{
+        /* grid-area: collegevine; */
+        background-image: url(../assets/media/collegevinephone.svg); 
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+    .collegevine h3{
+        /* color: white;
+        text-align: center; */
+        margin-top: 22%;
+        font-size: 3rem;
+    }
+
+
+    /* one % */
+    .one{
+        /* grid-area: one; */
+        background-image: url(../assets/media/onephone.svg);
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+    .one h3{
+        /* color: white;
+        text-align: center; */
+        margin-top: 22%;
+        font-size: 3rem;
+    }
+
+
+    /* colab */
+    .colab{
+        /* grid-area: colab; */
+        background-image: url(../assets/media/colabphone.svg);
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+    .colab h3{
+        /* color: white;
+        text-align: center; */
+        margin-top: 22%;
+        font-size: 3rem;
+    }
+
+    /* ---------------------------------------------- FOOTER - GRID ----------------------------------------------*/
+    .footer{
+        /* width: 100%; */
+        padding-top: 40px;
+        background-image: url(../assets/media/wavephone.svg);
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+    /* todo el container */
+    .container__footer{
+        /* max-width: 100%; */
+        margin: 32px 24px 0px 24px;
+        /* align-items: center;
+        justify-items: space-evenly;
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-rows: 0.5fr 0.8fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "container__row1"
+                            "box__copyright" */
+    }
+
+    /* primera fila - grids */
+    .container__row1{
+        /* grid-area: container__row1;
+        align-content: center;
+        justify-items: auto;
+        margin: 8px 8px 0 8px;
+        padding: 8px 8px 0 8px; */
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 2.5fr repeat(2, 1fr);
+        grid-template-areas: "box__footer1 box__footer2 box__footer3";
+    }
+
+    .box__footer1{
+        grid-area: box__footer1;
+    }
+    .box__footer2{
+        grid-area: box__footer2;
+    }
+    .box__footer3{
+        grid-area: box__footer3;
+        margin-top: 35px;
+    }
+
+    /* IZQUIERDA */
+    /* logo */
+    .logo__footer{
+        height: 50px;
+        width: 50px;
+        border-radius: 1000px;
+        padding: 8px;
+        margin-bottom: 4px;
+        cursor: pointer;
+    }
+
+    /* texto */
+    .footer__text{
+        /* font-weight: 300;
+        color: #7a7a7a; */
+        font-size: 14px; 
+        margin-bottom: 8px;
+        /* en font quiero borrarle texto y q quede "Better knows no boundaries." como hago? */
+    }
+
+    /* acortar texto */
+    .footer__text span{
+        display: none;
+    }
+
+    /* cta */
+    .footer__cta{
+        margin-top: 10px;
+        /* background: #0cccd2;
+        color: white; */
+        width: 170px;
+        height: 43px;
+        /* border-radius: 100px;
+        border-color: #0cccd2;
+        cursor: pointer; */
+    }
+
+    /* CENTRO */
+    /* links */
+    /* .links__footer__li{
+        list-style: none;
+    } */
+
+    .links__footer{
+        margin-top: 40px;
+    }
+
+    .links__footer__a {
+        /* color: #7a7a7a; */
+        font-weight: 500;
+        font-size: 12px;
+        /* text-decoration: none;
+        display: flex; */
+        margin-bottom: 10px;
+    }
+
+    /* DERECHA */
+    /* social media icons */
+    .icon{
+        /* font-size: 20px; */
+        height: 35px;
+        padding: 0 0 8px 35%;
+        justify-content: center;
+    }
+
+    /* titles */
+    .footer__title{
+        display: none
+    }
+
+    /* BOTTOM */
+    /* all rights reserved */
+    /* .box__copyright{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    } */
+
+    .box__copyright p{
+        /* color: #7a7a7a;
+        font-weight: 200; */
+        font-size: 12px;
+        /* text-align: center; */
+    }
+
+
+
+    /* ------------------------------------------------SERVICES -------------------------------------------------*/
+
+    /* personalizar en donde estoy parado - who we are en otro color */
+    /* .navBar_ul__li__a__services{
+        text-decoration: none;
+        color: rgb(90, 35, 134);
+        font-weight: 600;
+        font-size: 16px;
+    } */
+
+    /* -servicios q ofrezco GRID -*/
+
+    .services__bg{
+        min-height: 100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        /* bg */
+        background-image: url(../assets/media/bgphone.svg);
+        /* background-size: cover;
+        background-position: top center; */
+        /* font */
+        /* font-size: 24px;
+        font-weight: 500;
+        color: white;
+        flex-wrap: wrap;
+        cursor: pointer; */
+        /* align */
+        /* text-align: center; */
+    }
+    
+    .contenedor__servicios{
+            /* grids */
+            /* display: grid; */
+            grid-template-rows: 3fr repeat(6, 2fr);
+            grid-template-columns: 1fr;
+            grid-template-areas: "."
+                                 "uno" 
+                                 "dos" 
+                                 "tres"
+                                 "cuatro"
+                                 "cinco" 
+                                 "seis"
+        }
+
+    .uno{
+        /* grid-area: uno; */
+        margin-bottom: 32px;
+    }
+
+    .dos{
+        /* grid-area: dos; */
+        margin-bottom: 32px;
+    }
+
+    .tres{
+        /* grid-area: tres; */
+        margin-bottom: 32px;
+    }
+
+    .cuatro{
+        /* grid-area: cuatro; */
+        margin-bottom: 32px;
+    }
+
+    .cinco{
+        /* grid-area: cinco; */
+        margin-bottom: 32px;
+    }
+
+    .seis{
+        /* grid-area: seis; */
+        margin-bottom: 32px;
+    }
+
+    /* ----------------------------------------------------------------- GET IN TOUCH -------------------------------------------------------------*/
+    /* personalizar en donde estoy parado - who we are en otro color */
+    /* .navBar_ul__li__a__getintouch{
+        text-decoration: none;
+        color: rgb(90, 35, 134);
+        font-weight: 600;
+        font-size: 16px;
+    } */
+
+
+    /* todo el form */
+    .form{
+        /* min-height: 50vh;
+        width: 100%;
+        position: relative; */
+        display: flex;
+        /* font-size: 16px;
+        font-weight: 500;
+        color: #7a7a7a;
+        text-decoration: none; */
+        margin-left: 0%;
+        margin-bottom: 20%;
+    }
+
+    /* contenedor */
+    .fieldset{
+        /* min-height: 50vh; */
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: left; */
+        justify-content: left;
+        /* position: relative;
+        font-size: 16px;
+        font-weight: 300;
+        color: #7a7a7a;
+        text-decoration: none;
+        border-radius: 4px;
+        border-color: transparent; */
+    }
+
+    /* labels y ubicacion del fieldset dentro del container */
+    .labels__container{
+        margin: 16px 0px 0px 32px;
+    }
+
+    /* titulo lets talk */
+    .form__h1{
+        margin-top: 15%;
+        margin-left: -210px;
+    }
+
+
+    /* button lets work together */
+    .form__cta{
+        margin-top: 8px;
+    }
+
+    .form__cta__button{
+        background: #0cccd2;
+        color: white;
+        width: 200px;
+        height: 50px;
+        border-radius: 100px;
+        border-color: #0cccd2;
+        cursor: pointer;
+        margin-left: 200px;
+    }
+
+    /* inputs */
+    /* .input{
+        width: 400px;
+        padding: 8px;
+        outline: none;
+        text-align: left;
+        margin-bottom: 16px;
+        border-radius: 4px;
+        border-color: #FFFFFF;
+        border-style: ridge;
+        color: #CACECF;
+    } */
+
+
+    /* bg left */
+    .getintouch__main{
+        background-image: none;
+        /* background-size: cover;
+        background-position: left;
+        width: 45%;
+        height: 100vh; */
+    }
+
+    /* ----------------------------------------------------------------- JOIN THE TEAM -------------------------------------------------------------*/
+    /* personalizar en donde estoy parado - who we are en otro color */
+    /* .navBar_ul__li__a__jointheteam{
+        text-decoration: none;
+        color: rgb(90, 35, 134);
+        font-weight: 600;
+        font-size: 16px;
+    } */
+
+    /* bg left */
+    .jointheteam__main{
+        background-image: none
+        /* background-size: cover;
+        background-position: left;
+        width: 45%;
+        height: 100vh; */
+}
+
+
+}
+
+
+
