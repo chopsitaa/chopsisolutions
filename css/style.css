@@ -52,7 +52,7 @@ header{
     font-weight: 600;
     font-size: 16px;
     background-color: transparent;
-    transition: all 0.3s ease 0s;
+    transition: all 0.10s ease 0s;
 }
 
 .navBar_ul__li__a__contact{
