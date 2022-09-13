@@ -498,7 +498,261 @@ header{
     height: 100vh;
 }
 
-/* ---------------------------------------------------------------- MEDIA QUERY ---------------------------------------------------------------------*/
+
+
+
+
+/* ----------------------------------------------------------- MEDIA QUERY 601 - 1033 --------------------------------------------------------------*/
+@media screen and (min-width: 601px) and (max-width: 895px) {
+    /* ------------------------HERO SECTION -----------------*/
+
+    /* tamano imagen, y ubicacion texto */
+    .hero__title{
+        /* min-height: 100vh;
+        width: 100%;
+        display: flex; */
+        padding-top: 12rem;
+        padding-left: 8rem;
+        /* background */
+        background-image: url(../assets/media/hero.svg);
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+
+    /* formato del texto */
+    .hero__title__h1{
+        /* width: 80%; */
+        font-size: 90px;
+        color: white;
+        background-color: transparent;
+    }
+
+
+    /* - MANTRA (nose como ponerle flexbox sin complicarlo mas) -*/
+
+    .mantra__text{
+        /* display: block;
+        width: 80%;
+        text-align: center; */
+        margin: 30vh auto;
+        font-size: 28px;
+        /* font-weight: 300;
+        color: black;
+        background-color: transparent; */
+    }
+
+    /* .mantra__text__frase{
+        color: blueviolet;
+        font-weight: 400;
+    } */
+
+
+    /*---------- PROJECTS - grid --------*/
+
+    .projects__ul{
+        /* min-height: 100vh; */
+        margin-bottom: 16px;
+        /* grids */
+        /* display: grid; */
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-areas: "collegevine"
+                             "one"
+                             "colab"
+    }
+
+
+    /* collegevine */
+    .collegevine{
+        /* grid-area: collegevine; */
+        background-image: url(../assets/media/collegevinephone.svg); 
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+    .collegevine h3{
+        /* color: white;
+        text-align: center; */
+        margin-top: 15%;
+        font-size: 3rem;
+    }
+
+
+    /* one % */
+    .one{
+        /* grid-area: one; */
+        background-image: url(../assets/media/onephone.svg);
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+    .one h3{
+        /* color: white;
+        text-align: center; */
+        margin-top: 15%;
+        font-size: 3rem;
+    }
+
+
+    /* colab */
+    .colab{
+        /* grid-area: colab; */
+        background-image: url(../assets/media/colabphone.svg);
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+    .colab h3{
+        /* color: white;
+        text-align: center; */
+        margin-top: 15%;
+        font-size: 3rem;
+    }
+}
+
+
+/* ----------------------------------------------------------- MEDIA QUERY 601 - 1033 --------------------------------------------------------------*/
+
+
+@media screen and (min-width: 601px) and (max-width: 1033px) {
+    /* ---------------------------------------------- FOOTER - GRID ----------------------------------------------*/
+    .footer{
+        /* width: 100%; */
+        padding-top: 40px;
+        background-image: url(../assets/media/wave.svg);
+        /* background-size: cover;
+        background-position: top center; */
+    }
+
+    /* todo el container */
+    .container__footer{
+        /* max-width: 100%; */
+        margin: 32px 24px 0px 24px;
+        /* align-items: center;
+        justify-items: space-evenly;
+        justify-content: space-evenly;
+        display: grid;
+        grid-template-rows: 0.5fr 0.8fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "container__row1"
+                            "box__copyright" */
+    }
+
+    /* primera fila - grids */
+    .container__row1{
+        /* grid-area: container__row1;
+        align-content: center;
+        justify-items: auto;
+        margin: 8px 8px 0 8px;
+        padding: 8px 8px 0 8px; */
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 2.5fr repeat(2, 1fr);
+        grid-template-areas: "box__footer1 box__footer2 box__footer3";
+    }
+
+    .box__footer1{
+        grid-area: box__footer1;
+    }
+    .box__footer2{
+        grid-area: box__footer2;
+    }
+    .box__footer3{
+        grid-area: box__footer3;
+        margin-top: 35px;
+    }
+
+    /* IZQUIERDA */
+    /* logo */
+    .logo__footer{
+        height: 55px;
+        width: 55px;
+        border-radius: 100px;
+        padding: 8px;
+        margin-bottom: 4px;
+        margin-top: 16px;
+        cursor: pointer;
+    }
+
+    /* texto */
+    .footer__text{
+        /* font-weight: 300;
+        color: #7a7a7a; */
+        font-size: 16px; 
+        margin-bottom: 8px;
+        /* en font quiero borrarle texto y q quede "Better knows no boundaries." como hago? */
+    }
+
+    /* acortar texto */
+    .footer__text span{
+        display: none;
+    }
+
+    /* cta */
+    .footer__cta{
+        margin-top: 12px;
+        /* background: #0cccd2;
+        color: white; */
+        width: 170px;
+        height: 43px;
+        /* border-radius: 100px;
+        border-color: #0cccd2;
+        cursor: pointer; */
+    }
+
+    /* CENTRO */
+    /* links */
+    /* .links__footer__li{
+        list-style: none;
+    } */
+
+    .links__footer{
+        margin-top: 40px;
+    }
+
+    .links__footer__a {
+        /* color: #7a7a7a; */
+        font-weight: 500;
+        font-size: 16px;
+        /* text-decoration: none;
+        display: flex; */
+        margin-bottom: 10px;
+    }
+
+    /* DERECHA */
+    /* social media icons */
+    .icon{
+        /* font-size: 20px; */
+        height: 44px;
+        padding: 0 0 12px 35%;
+        justify-content: center;
+    }
+
+    /* titles */
+    .footer__title{
+        display: none
+    }
+
+    /* BOTTOM */
+    /* all rights reserved */
+    /* .box__copyright{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    } */
+
+    .box__copyright p{
+        /* color: #7a7a7a;
+        font-weight: 200; */
+        font-size: 12px;
+        /* text-align: center; */
+    }
+
+}
+
+
+/* ------------------------------------------------------------ MEDIA QUERY 350 - 600 --------------------------------------------------------------*/
 /* ----------------------------------------------who we are ------------------------------------------------*/
 
 
@@ -576,7 +830,7 @@ header{
     .collegevine h3{
         /* color: white;
         text-align: center; */
-        margin-top: 22%;
+        margin-top: 15%;
         font-size: 3rem;
     }
 
@@ -592,7 +846,7 @@ header{
     .one h3{
         /* color: white;
         text-align: center; */
-        margin-top: 22%;
+        margin-top: 15%;
         font-size: 3rem;
     }
 
@@ -608,7 +862,7 @@ header{
     .colab h3{
         /* color: white;
         text-align: center; */
-        margin-top: 22%;
+        margin-top: 15%;
         font-size: 3rem;
     }
 
@@ -793,17 +1047,17 @@ header{
 
     .uno{
         /* grid-area: uno; */
-        margin-bottom: 32px;
+        margin-bottom: 50px;
     }
 
     .dos{
         /* grid-area: dos; */
-        margin-bottom: 32px;
+        margin-bottom: 50px;
     }
 
     .tres{
         /* grid-area: tres; */
-        margin-bottom: 32px;
+        margin-bottom: 50px;
     }
 
     .cuatro{
@@ -930,9 +1184,12 @@ header{
         width: 45%;
         height: 100vh; */
 }
-
-
 }
+
+
+
+
+
 
 
 
