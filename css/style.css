@@ -258,137 +258,7 @@ header{
     cursor: pointer;
 }
 
-/* ------------ */
 
-*, *:before, *:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  $openSans: 'Open Sans', Helvetica, Arial, sans-serif;
-  body {
-    background: #333;
-    font-family: $openSans;
-  }
-  
-  .buttons {
-    margin-top: 50px;
-    text-align: center;
-    border-radius:30px;
-  }
-  
-  $cyan: #0505A9;
-  $dark: #FFFFFF;
-  $borderW: 2px;
-  
-  .blob-btn {
-    $numOfBlobs: 4;
-    z-index: 1;
-    position: relative;
-    padding: 20px 46px;
-    margin-bottom: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: $cyan;
-    font-size: 16px;
-    font-weight: bold;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    transition: color 0.5s;
-    cursor: pointer;
-    border-radius:30px;
-    
-    &:before {
-      content: "";
-      z-index: 1;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border: $borderW solid $cyan;
-      border-radius:30px;
-    }
-    
-    &:after {
-      content: "";
-      z-index: -2;
-      position: absolute;
-      left: $borderW*1.5;
-      top: $borderW*1.5;
-      width: 100%;
-      height: 100%;
-  
-      transition: all 0.3s 0.2s;
-      border-radius:30px;
-    }
-    
-    &:hover {
-      color: $dark;
-      border-radius:30px;
-      
-      &:after {
-        transition: all 0.3s;
-        left: 0;
-        top: 0;
-        border-radius:30px;
-      }
-    }
-    
-    &__inner {
-      z-index: -1;
-      overflow: hidden;
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      border-radius:30px;
-      background:#ffffff;
-    }
-    
-    // additional container created, because in FF blobs are breaking overflow:hidden of element with svg gooey filter
-    &__blobs {
-      position: relative;
-      display: block;
-      height: 100%;
-      filter: url('#goo');
-    }
-    
-    &__blob {
-      position: absolute;
-      top: $borderW;
-      width: 100% / $numOfBlobs;
-      height: 100%;
-      background: $cyan;
-      border-radius: 100%;
-      transform: translate3d(0,150%,0) scale(1.7);
-      transition: transform 0.45s;
-      
-      @supports(filter: url('#goo')) {
-        transform: translate3d(0,150%,0) scale(1.4);
-      }
-      
-      @for $i from 1 through $numOfBlobs {
-        &:nth-child(#{$i}) {
-          left: ($i - 1) * (120% / $numOfBlobs);
-          transition-delay: ($i - 1) * 0.08s;
-        }
-      }
-      
-      .blob-btn:hover & {
-        transform: translateZ(0) scale(1.7);
-        
-        @supports(filter: url('#goo')) {
-          transform: translateZ(0) scale(1.4);
-        }
-      }
-    }
-    
-  }
-
-/* ------------ */
 
 /* CENTRO */
 /* links */
@@ -640,13 +510,13 @@ header{
 
 
 
-/* ------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------- */
 
 
 
 
 
-/* ---------------------------------------------- MEDIA QUERY 601 - 895 (WHO WE ARE)--------------------------------------------------------------*/
+/* ----------------------------------------------- MEDIA QUERY 601 - 895 (WHO WE ARE)--------------------------------------------------------------*/
 @media screen and (min-width: 601px) and (max-width: 895px) {
 
     /* ------------------------------WHO WE ARE ----------------------------*/
@@ -655,21 +525,14 @@ header{
 
     /* tamano imagen, y ubicacion texto */
     .hero__title{
-        /* min-height: 100vh;
-        width: 100%;
-        display: flex; */
         padding-top: 12rem;
         padding-left: 8rem;
-        /* background */
         background-image: url(../assets/media/hero.svg);
-        /* background-size: cover;
-        background-position: top center; */
     }
 
 
     /* formato del texto */
     .hero__title__h1{
-        /* width: 80%; */
         font-size: 90px;
         color: white;
         background-color: transparent;
@@ -679,29 +542,13 @@ header{
     /* - MANTRA (nose como ponerle flexbox sin complicarlo mas) -*/
 
     .mantra__text{
-        /* display: block;
-        width: 80%;
-        text-align: center; */
         margin: 30vh auto;
         font-size: 28px;
-        /* font-weight: 300;
-        color: black;
-        background-color: transparent; */
     }
 
-    /* .mantra__text__frase{
-        color: blueviolet;
-        font-weight: 400;
-    } */
-
-
     /*------------- projects - grid ------------*/
-
     .projects__ul{
-        /* min-height: 100vh; */
         margin-bottom: 16px;
-        /* grids */
-        /* display: grid; */
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
         grid-template-areas: "collegevine"
@@ -712,15 +559,10 @@ header{
 
     /* collegevine */
     .collegevine{
-        /* grid-area: collegevine; */
         background-image: url(../assets/media/collegevinephone.svg); 
-        /* background-size: cover;
-        background-position: top center; */
     }
 
     .collegevine h3{
-        /* color: white;
-        text-align: center; */
         margin-top: 15%;
         font-size: 3rem;
     }
@@ -728,15 +570,10 @@ header{
 
     /* one % */
     .one{
-        /* grid-area: one; */
         background-image: url(../assets/media/onephone.svg);
-        /* background-size: cover;
-        background-position: top center; */
     }
 
     .one h3{
-        /* color: white;
-        text-align: center; */
         margin-top: 15%;
         font-size: 3rem;
     }
@@ -744,56 +581,34 @@ header{
 
     /* colab */
     .colab{
-        /* grid-area: colab; */
         background-image: url(../assets/media/colabphone.svg);
-        /* background-size: cover;
-        background-position: top center; */
     }
 
     .colab h3{
-        /* color: white;
-        text-align: center; */
         margin-top: 15%;
         font-size: 3rem;
     }
 }
 
 
-/* ----------------------------------------------------------- MEDIA QUERY 601 - 1033 (FOOTER) --------------------------------------------------------------*/
+/* ------------------------------------------------- MEDIA QUERY 601 - 1033 (FOOTER) --------------------------------------------------------------*/
 
 
 @media screen and (min-width: 601px) and (max-width: 1033px) {
 
     /* ------------------------- FOOTER - GRID --------------------------------*/
     .footer{
-        /* width: 100%; */
         padding-top: 40px;
         background-image: url(../assets/media/wave.svg);
-        /* background-size: cover;
-        background-position: top center; */
     }
 
     /* todo el container */
     .container__footer{
-        /* max-width: 100%; */
         margin: 32px 24px 0px 24px;
-        /* align-items: center;
-        justify-items: space-evenly;
-        justify-content: space-evenly;
-        display: grid;
-        grid-template-rows: 0.5fr 0.8fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "container__row1"
-                            "box__copyright" */
     }
 
     /* primera fila - grids */
     .container__row1{
-        /* grid-area: container__row1;
-        align-content: center;
-        justify-items: auto;
-        margin: 8px 8px 0 8px;
-        padding: 8px 8px 0 8px; */
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 2.5fr repeat(2, 1fr);
@@ -825,12 +640,8 @@ header{
 
     /* texto */
     .footer__text{
-        /* font-weight: 300;
-        color: #7a7a7a; */
         font-size: 16px; 
-        margin-bottom: 8px;
-        /* en font quiero borrarle texto y q quede "Better knows no boundaries." como hago? */
-    }
+        margin-bottom: 8px;    }
 
     /* acortar texto */
     .footer__text span{
@@ -840,38 +651,22 @@ header{
     /* cta */
     .footer__cta{
         margin-top: 12px;
-        /* background: #0cccd2;
-        color: white; */
         width: 170px;
         height: 43px;
-        /* border-radius: 100px;
-        border-color: #0cccd2;
-        cursor: pointer; */
     }
-
-    /* CENTRO */
-    /* links */
-    /* .links__footer__li{
-        list-style: none;
-    } */
 
     .links__footer{
         margin-top: 40px;
     }
 
     .links__footer__a {
-        /* color: #7a7a7a; */
         font-weight: 500;
         font-size: 16px;
-        /* text-decoration: none;
-        display: flex; */
         margin-bottom: 10px;
     }
 
     /* DERECHA */
-    /* social media icons */
     .icon{
-        /* font-size: 20px; */
         height: 44px;
         padding: 0 0 12px 35%;
         justify-content: center;
@@ -882,25 +677,14 @@ header{
         display: none
     }
 
-    /* BOTTOM */
-    /* all rights reserved */
-    /* .box__copyright{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    } */
-
     .box__copyright p{
-        /* color: #7a7a7a;
-        font-weight: 200; */
         font-size: 12px;
-        /* text-align: center; */
     }
 
 }
 
 
-/* --------------------------------------------------- MEDIA QUERY 350 - 600 (WHO WE ARE - SERVICES - FOOTER)---------------------------------------------------------*/
+/* --------------------------------- MEDIA QUERY 350 - 600 (WHO WE ARE - SERVICES - FOOTER)---------------------------------------------------------*/
 
 
 @media screen and (min-width: 350px) and (max-width: 600px) {
@@ -912,21 +696,14 @@ header{
 
     /* tamano imagen, y ubicacion texto */
     .hero__title{
-        /* min-height: 100vh;
-        width: 100%;
-        display: flex; */
         padding-top: 12rem;
         padding-left: 8rem;
-        /* background */
         background-image: url(../assets/media/hero.svg);
-        /* background-size: cover;
-        background-position: top center; */
     }
 
 
     /* formato del texto */
     .hero__title__h1{
-        /* width: 80%; */
         font-size: 60px;
         color: white;
         background-color: transparent;
@@ -936,29 +713,14 @@ header{
     /* - MANTRA (nose como ponerle flexbox sin complicarlo mas) -*/
 
     .mantra__text{
-        /* display: block;
-        width: 80%;
-        text-align: center; */
         margin: 30vh auto;
         font-size: 28px;
-        /* font-weight: 300;
-        color: black;
-        background-color: transparent; */
     }
-
-    /* .mantra__text__frase{
-        color: blueviolet;
-        font-weight: 400;
-    } */
-
 
     /*----- PROJECTS - grid ----*/
 
     .projects__ul{
-        /* min-height: 100vh; */
         margin-bottom: 16px;
-        /* grids */
-        /* display: grid; */
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
         grid-template-areas: "collegevine"
@@ -969,15 +731,10 @@ header{
 
     /* collegevine */
     .collegevine{
-        /* grid-area: collegevine; */
         background-image: url(../assets/media/collegevinephone.svg); 
-        /* background-size: cover;
-        background-position: top center; */
     }
 
     .collegevine h3{
-        /* color: white;
-        text-align: center; */
         margin-top: 15%;
         font-size: 3rem;
     }
@@ -985,15 +742,10 @@ header{
 
     /* one % */
     .one{
-        /* grid-area: one; */
         background-image: url(../assets/media/onephone.svg);
-        /* background-size: cover;
-        background-position: top center; */
     }
 
     .one h3{
-        /* color: white;
-        text-align: center; */
         margin-top: 15%;
         font-size: 3rem;
     }
@@ -1001,49 +753,27 @@ header{
 
     /* colab */
     .colab{
-        /* grid-area: colab; */
         background-image: url(../assets/media/colabphone.svg);
-        /* background-size: cover;
-        background-position: top center; */
     }
 
     .colab h3{
-        /* color: white;
-        text-align: center; */
         margin-top: 15%;
         font-size: 3rem;
     }
 
     /* --------------------------- FOOTER - GRID ------------------------*/
     .footer{
-        /* width: 100%; */
         padding-top: 40px;
         background-image: url(../assets/media/wavephone.svg);
-        /* background-size: cover;
-        background-position: top center; */
     }
 
     /* todo el container */
     .container__footer{
-        /* max-width: 100%; */
         margin: 32px 24px 0px 24px;
-        /* align-items: center;
-        justify-items: space-evenly;
-        justify-content: space-evenly;
-        display: grid;
-        grid-template-rows: 0.5fr 0.8fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "container__row1"
-                            "box__copyright" */
     }
 
     /* primera fila - grids */
     .container__row1{
-        /* grid-area: container__row1;
-        align-content: center;
-        justify-items: auto;
-        margin: 8px 8px 0 8px;
-        padding: 8px 8px 0 8px; */
         display: grid;
         grid-template-rows: 1fr;
         grid-template-columns: 2.5fr repeat(2, 1fr);
@@ -1074,11 +804,8 @@ header{
 
     /* texto */
     .footer__text{
-        /* font-weight: 300;
-        color: #7a7a7a; */
         font-size: 14px; 
         margin-bottom: 8px;
-        /* en font quiero borrarle texto y q quede "Better knows no boundaries." como hago? */
     }
 
     /* acortar texto */
@@ -1089,38 +816,22 @@ header{
     /* cta */
     .footer__cta{
         margin-top: 10px;
-        /* background: #0cccd2;
-        color: white; */
         width: 170px;
         height: 43px;
-        /* border-radius: 100px;
-        border-color: #0cccd2;
-        cursor: pointer; */
     }
-
-    /* CENTRO */
-    /* links */
-    /* .links__footer__li{
-        list-style: none;
-    } */
 
     .links__footer{
         margin-top: 40px;
     }
 
     .links__footer__a {
-        /* color: #7a7a7a; */
         font-weight: 500;
         font-size: 12px;
-        /* text-decoration: none;
-        display: flex; */
         margin-bottom: 10px;
     }
 
     /* DERECHA */
-    /* social media icons */
     .icon{
-        /* font-size: 20px; */
         height: 35px;
         padding: 0 0 8px 35%;
         justify-content: center;
@@ -1131,32 +842,12 @@ header{
         display: none
     }
 
-    /* BOTTOM */
-    /* all rights reserved */
-    /* .box__copyright{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    } */
-
     .box__copyright p{
-        /* color: #7a7a7a;
-        font-weight: 200; */
         font-size: 12px;
-        /* text-align: center; */
     }
 
 
-
     /* -------------------------SERVICES ---------------------------*/
-
-    /* personalizar en donde estoy parado - who we are en otro color */
-    /* .navBar_ul__li__a__services{
-        text-decoration: none;
-        color: rgb(90, 35, 134);
-        font-weight: 600;
-        font-size: 16px;
-    } */
 
     /* -servicios q ofrezco GRID -*/
 
@@ -1165,23 +856,10 @@ header{
         width: 100%;
         align-items: center;
         justify-content: center;
-        /* bg */
         background-image: url(../assets/media/bgphone.svg);
-        /* background-size: cover;
-        background-position: top center; */
-        /* font */
-        /* font-size: 24px;
-        font-weight: 500;
-        color: white;
-        flex-wrap: wrap;
-        cursor: pointer; */
-        /* align */
-        /* text-align: center; */
     }
     
     .contenedor__servicios{
-            /* grids */
-            /* display: grid; */
             grid-template-rows: 3fr repeat(6, 2fr);
             grid-template-columns: 1fr;
             grid-template-areas: "."
@@ -1194,38 +872,32 @@ header{
         }
 
     .uno{
-        /* grid-area: uno; */
         margin-bottom: 50px;
     }
 
     .dos{
-        /* grid-area: dos; */
         margin-bottom: 50px;
     }
 
     .tres{
-        /* grid-area: tres; */
         margin-bottom: 50px;
     }
 
     .cuatro{
-        /* grid-area: cuatro; */
         margin-bottom: 32px;
     }
 
     .cinco{
-        /* grid-area: cinco; */
         margin-bottom: 32px;
     }
 
     .seis{
-        /* grid-area: seis; */
         margin-bottom: 32px;
     }
 
 }
 
-/* ------------------------------------------------- MEDIA QUERY 1000px - 1261px (GET IN TOUCH - JOIN THE TEAM) --------------------------------------------------*/
+/* -------------------------- MEDIA QUERY 1000px - 1261px (GET IN TOUCH - JOIN THE TEAM) --------------------------------------------------*/
 
 
 @media screen and (min-width: 1000px) and (max-width: 1261px) {
@@ -1244,7 +916,7 @@ header{
     }
 }
 
-/* -------------------------------------------------- MEDIA QUERY 875px - 999px (GET IN TOUCH - JOIN THE TEAM) -------------------------------------------------------*/
+/* ---------------------------------- MEDIA QUERY 875px - 999px (GET IN TOUCH - JOIN THE TEAM) --------------------------------------------------*/
 
 
 @media screen and (min-width: 875px) and (max-width: 999px) {
@@ -1264,7 +936,7 @@ header{
     }
 }
 
-/* ---------------------------------------------------- MEDIA QUERY 300px - 874px (GET IN TOUCH - JOIN THE TEAM) -------------------------------------------------*/
+/* ------------------------------------------- MEDIA QUERY 300px - 874px (GET IN TOUCH - JOIN THE TEAM) ------------------------------------------*/
 
 
 @media screen and (min-width: 300px) and (max-width: 874px) {
@@ -1285,7 +957,6 @@ header{
 
     /* labels y ubicacion del fieldset dentro del container */
     .labels__container{
-        /* margin: 16px 0px 0px 32px; */
         display: grid; 
         align-content: center; 
         position: relative; 
@@ -1327,5 +998,3 @@ header{
         background-image: none
     }
 }
-
-
