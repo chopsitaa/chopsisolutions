@@ -46,7 +46,7 @@ header{
     margin: 0 30px;
 }
 
-.navBar_ul__li__a{
+.navBar_ul__li__a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     font-weight: 600;
@@ -74,6 +74,19 @@ header{
     font-size: 16px;
 }
 
+/* hamburguer menu: que no se vea checkbox nunca - lo pongo afuera de mediaquerys*/
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
 
 
 
@@ -935,6 +948,63 @@ header{
         height: 100vh;
     }
 }
+
+/* ------------------------------------------- MEDIA QUERY 981px a menos (HAMBURGER MENU) ------------------------------------------*/
+
+    /* que no aparezca menu cuando estoy en mas de estos px */
+    @media (min-width: 981px){
+        .checkbtn{
+            display: none;
+        }
+        #check{
+            display: none;
+        }
+        }
+    
+    
+    /* que aparezca menu cuando estoy en estos px */
+    @media (max-width: 980px){
+        .checkbtn{
+          display: block;
+          font-size: 30px;
+          color: #8EE5E0;
+          float: right;
+          line-height: 80px;
+          margin-right: 40px;
+          cursor: pointer;
+        }
+        .navBar__ul{
+          position: fixed;
+          width: 100%;
+          height: 100vh;
+          background: white;
+          top: 80px;
+          left: -100%;
+          text-align: center;
+          transition: all .5s;
+        }
+        .navBar__ul__li{
+          display: block;
+          margin: 50px 0;
+          line-height: 30px;
+        }
+        .navBar_ul__li__a,.navBar_ul__li__a__whoweare,.navBar_ul__li__a__contact,.navBar_ul__li__a__jointheteam,.navBar_ul__li__a__ourwork,.navBar_ul__li__a__services{
+          font-size: 20px;
+        }
+        /* .navBar_ul__li__a__whoweare{
+          background: none;
+          color: #5BD1CA;
+        } */
+        a:hover{
+            background: none;
+            color: #5BD1CA;
+          }
+        #check:checked ~ ul{
+          left: 0;
+        }
+      }
+
+
 
 /* ------------------------------------------- MEDIA QUERY 300px - 874px (GET IN TOUCH - JOIN THE TEAM) ------------------------------------------*/
 
