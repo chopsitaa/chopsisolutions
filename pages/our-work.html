@@ -5,96 +5,167 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+    <!-- animations -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- bootstrap -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png">
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- css sheet -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-
 <body>
 
-	<!-- apertura fila de logo + nav --> 
+    <!-- apertura fila de logo + nav --> 
 
-	<header>
+    <header class="container-fluid">
         <!-- Navbar -->
-            <img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo">
-            <nav class="navBar">
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                  <i class="fas fa-bars"></i>
-                </label>
-                <!-- logo -->
-                <ul class="navBar__ul">
-                    <!-- list items -->
-                    <li class="navBar__ul__li"><a class="navBar_ul__li__a" href="../index.html">Who we are</a></li>
-                    <li class="navBar__ul__li"><a class="navBar_ul__li__a" href="../pages/services.html">Services</a></li>
-                    <li class="navBar__ul__li"><a class="navBar_ul__li__a__ourwork" href="../pages/our-work.html">Our work</a></li>
-                    <li class="navBar__ul__li"><a class="navBar_ul__li__a__contact" href="../pages/get-in-touch.html">Get in touch</a></li>
-                    <li class="navBar__ul__li"><a class="navBar_ul__li__a" href="../pages/join-the-team.html">Join the team</a></li>
-                </ul>
-            </nav>
-    </header>
-
-    <!-- projects -->
-        <section>
-            <div class="div__projects">
-                <ul class="projects__ul">
-                    <li class="collegevine animate__animated animate__bounceInLeft"> <h3>College Vine</h3></li>
-                    <li class="one animate__animated animate__bounceInLeft"><h3>One %</h3></li>
-                    <li class="colab animate__animated animate__bounceInLeft"><h3>Colab</h3></li>
-                </ul>
-            </div>
-        </section> 
-
-
-    <!-- footer GRID --> 
-    <footer class="footer">
-        <div class="container__footer">
-                <div class="container__row1">
-                    <div class="box__footer1">
-                        <div>
-                            <img class="logo__footer" src="../assets/media/chopsionline.jpeg" alt="logo">
-                        </div>
-        
-                        <div>
-                            <p class="footer__text">Better knows no boundaries. <span>We’re proud to be one of the world's best agencies</span></p>
-                        </div>
-                        <div>
-                            <a href="../pages/get-in-touch.html"><button class="footer__cta">PARTNER WITH US</button></a>
-                        </div>
-                    </div>
-        
-                    <div class="box__footer2">
-                        <h4 class="footer__title">Solutions</h4>
-                        <!-- estos href en # tenemos que poner el link de hacia donde quiero q me lleve -->
-                        <ul class="links__footer" >
-                            <li class="links__footer__li"><a class="links__footer__a" href="../pages/get-in-touch.html">Get in touch</a></li>
-                            <li class="links__footer__li"><a class="links__footer__a" href="../pages/our-work.html">Our work</a></li>
-                            <li class="links__footer__li"><a class="links__footer__a" href="../pages/services.html">Services</a></li>
-                            <li class="links__footer__li"><a class="links__footer__a" href="../pages/join-the-team.html">Join the team</a></li>
+        <div class="row bg-info text-center">
+            <nav class="col navbar navbar-expand-lg navbar-light fixed-top py-3">
+                <div class="container-fluid px-4 px-lg-5">
+                    <!-- logo -->
+                    <a class="navbar-brand" href="../index.html"><img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo"></a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Who we are</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="../pages/our-work.html">Our work</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/get-in-touch.html">Get in touch</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/join-the-team.html">Join the team</a></li>
                         </ul>
                     </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+        <!-- projects -->
+        <div class="container-flex my-5 projects">
+            <div class="row">
+              <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <!-- Card -->
+                <div
+                     class="bg-image card shadow-1-strong"
+                     style="
+                            background-image: url(../assets/media/collegevineboot.jpg);
+                            "
+                     >
+                  <div class="card-body text-white">
+                    <h5 class="card-title">College Vine</h5>
+                    <p class="card-text">
+                        Connects to colleges, advisors, peers, and admissions offices.
+                    </p>
+                    <a href="https://www.collegevine.com/" target=”_blank” class="btn btn-outline-light">Case Study</a>
+                  </div>
+                </div>
+                <!-- Card -->
+              </div>
+          
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <!-- Card -->
+                <div
+                     class="bg-image card shadow-1-strong"
+                     style="
+                            background-image: url(../assets/media/colabboot.jpg);
+                            "
+                     >
+                  <div class="card-body text-white">
+                    <h5 class="card-title">Colab</h5>
+                    <p class="card-text">
+                        Post a job, hire a freelancer, learn about your business and boost your brand.
+                    </p>
+                    <a href="https://www.fiverr.com/" target=”_blank” class="btn btn-outline-light">Case Study</a>
+                  </div>
+                </div>
+                <!-- Card -->
+              </div>
+          
+              <div class="col-lg-4 mb-4 mb-lg-0">
+                <!-- Card -->
+                <div
+                     class="bg-image card shadow-1-strong"
+                     style="
+                            background-image: url(../assets/media/oneboot.jpg);
+                            "
+                     >
+                  <div class="card-body text-white">
+                    <h5 class="card-title">1% Software</h5>
+                    <p class="card-text">
+                        Custom your Software and build a dynamic & automated company.
+                    </p>
+                    <a href="https://theonepercentsoftware.com/" target=”_blank” class="btn btn-outline-light">Case Study</a>
+                  </div>
+                </div>
+                <!-- Card -->
+              </div>
+            </div>
+          </div>
+
+    <!-- footer --> 
+    <footer class="text-center text-lg-start text-white">
+        <div class="container p-4">
+            <div class="row my-4">
+                <div class="col-lg-6 mb-md-0 mr-lg-0">
+                    <div class="d-flex  mb-4 mx-auto">
+                    <img class="rounded-circle" src="../assets/media/chopsionline.jpeg" height="50" alt="logo" />
+                    </div>        
+                    <p class="">We’re proud to be one of the world's best agencies</p>
+                    <a class="btn btn-primary btn-sm btn2" href="./pages/get-in-touch.html">GET IN TOUCH!</a>
+                </div>
         
-                    <div class="box__footer3">
-                        <h4 class="footer__title">Social</h4>
-                        <!-- estos href en # tenemos que poner el link de hacia donde quiero q me lleve -->
-                        <div>
-                            <a href="https://www.instagram.com/chopsisolutions/"><img class="icon" src="../assets/media/Instagram.svg" alt="instagram"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/chopsisolutions/"><img class="icon" src="../assets/media/youtube.svg" alt="youtube"></a>
-                        </div>
-                        <div>
-                            <a href="https://www.instagram.com/chopsisolutions/"><img class="icon" src="../assets/media/linkedin.svg" alt="linkedin"></a>
-                        </div>
-                    </div>
+                <!--links-->
+                <div class="col-lg-3 mb-8 mt-5 mb-md-0">
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="../index.html" class="text-white nav-link">Get in touch</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../pages/services.html" class="text-white nav-link">Our work</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../pages/our-work.html" class="text-white nav-link">Services</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="../pages/get-in-touch.html" class="text-white nav-link">Join the team</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- all rights reserved -->
-                <div class="box__copyright">
-                    <p>© 2022 <b>ChopsiSolutions.</b> All rights reserved.</p>
+                <!--Grid column-->
+
+
+                <!--icons-->
+                <div class="col-lg-3 mt-5 mb-md-0 d-flex flex-column">
+                    <ul class="list-unstyled d-flex flex-column">
+                        <li class="mb-6">
+                            <a class="text-white ms-2" href="https://www.instagram.com/chopsisolutions/" target=”_blank>
+                            <i class="bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white ms-2" href="https://www.instagram.com/chopsisolutions/" target=”_blank>
+                            <i class="bi-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white ms-2" href="https://www.instagram.com/chopsisolutions/" target=”_blank>
+                            <i class="bi-youtube"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+        </div>        
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            <p>© 2022 <b>ChopsiSolutions.</b> All rights reserved.</p>
         </div>
     </footer>
 
@@ -103,5 +174,9 @@
    <script>
        AOS.init();
    </script>
+
+   
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 
 </body>
