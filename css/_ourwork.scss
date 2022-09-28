@@ -1,0 +1,45 @@
+.projects{
+    padding-top: 11rem;
+    padding-bottom: 0;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 50vh;
+    div{
+        // card
+        div{
+            div{
+                div{
+                    h5{}
+                    p{}
+                    a{}
+                }
+            }
+        }    
+        // card
+        div{
+            div{
+                div{
+                    h5{}
+                    p{}
+                    a{}
+                }
+            }
+        }    
+        // card
+        div{
+            div{
+                div{
+                    h5{}
+                    p{}
+                    a{}
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 990px){
+    .projects{
+      margin-bottom: 25rem !important;
+    }
+}

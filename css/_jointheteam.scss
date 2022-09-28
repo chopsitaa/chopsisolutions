@@ -1,0 +1,79 @@
+.jointheteam{
+    padding-top: 11rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    div{
+        div{
+            div{
+                h2{}
+                .divider{
+                    height: 0.2rem;
+                    max-width: 3.25rem;
+                    margin: 1.5rem auto;
+                    background-color: map-get($colores, "oscuro") !important;
+                    opacity: 1;
+                    color: map-get($colores, "oscuro");
+                }
+            }
+        }
+        div{
+            div{
+                form{
+                    // name 
+                    div{
+                        input{}
+                        label{}
+                        div{}
+                    }
+                    // email 
+                    div{
+                        input{}
+                        label{}
+                        div{}
+                        div{}
+                    }
+                    // phone
+                    div{
+                        input{}
+                        label{}
+                        div{}
+                    }
+                    // message
+                    div{
+                        textarea{}
+                        label{}
+                        div{}
+                    }
+                    // submit success message
+                    div{
+                        div{
+                            div{}
+                        }
+                    }
+                    // submit error message
+                    div{
+                        div{}
+                    }
+                    // submit button
+                    div{
+                        .submitbutton{
+                            font-weight: 500;
+                            color: map-get($colores, "blanco") !important;
+                            text-align: center;
+                            text-decoration: none;
+                            cursor: pointer;
+                            background-color: map-get($colores, "claro") !important;
+                            border: 1px solid transparent;
+                            padding: 1rem 2.5rem;
+                            border-radius: 100rem;
+                            border-color: transparent;
+                            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

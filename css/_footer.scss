@@ -1,0 +1,79 @@
+footer{
+    background-image: url("../assets/media/wave2.svg"); background-repeat: no-repeat;
+    div{
+        div{
+            div{
+                div{}
+                .rounded-circle{}
+                p{}
+                .btn2{
+                    font-weight: 500;
+                    color: map-get($colores, "claro");
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    background-color: map-get($colores, "blanco");
+                    border: 1px solid transparent;
+                    padding: 1rem 2.5rem;
+                    border-radius: 100rem;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                }
+            }
+        }
+    }
+    // links
+    .footerlinks{
+        ul{
+            li{
+                a{}
+            }
+            li{
+                a{}
+            }
+            li{
+                a{}
+            }
+            li{
+                a{}
+            }
+        }
+    }
+    // icons
+    .footericons{
+        .icons{
+            li{
+                a{
+                    i{color: map-get($colores, "blanco") !important;}
+                }
+            }
+            li{
+                a{
+                    i{color: map-get($colores, "blanco") !important;}
+                }
+            }
+            li{
+                a{
+                    i{color: map-get($colores, "blanco") !important;}
+                }
+            }
+        }
+    }
+    // copyright
+    div{
+        p{}
+    }
+}
+
+
+@media (max-width: 990px){
+    .rounded-circle, .footericons, .footerlinks{
+        display: none;
+    }
+    .btn2{
+        margin-bottom: 0;
+    }
+    .icons{
+        margin: 0;
+        flex-direction: row;
+    }
+}

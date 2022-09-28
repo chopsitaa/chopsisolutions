@@ -1,0 +1,164 @@
+// masthead
+.masthead{
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/media/bgboot.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 100vh;
+    font-size: 2.25rem;
+    div{
+        div{
+            div{
+                h1{
+                    font-size: 2.25rem;
+                }
+                .divider{
+                    height: 0.2rem;
+                    max-width: 10.25rem;
+                    margin: 1.5rem auto;
+                    background-color: map-get($colores, oscuro); !important;
+                    opacity: 1;
+                    color: map-get($colores, “claro”);
+                }
+            }
+            div{
+                #subtitle{
+                    color: rgb(208, 208, 208) !important;
+                    font-size: large;
+                }
+                .btn1{
+                    font-weight: 500;
+                    color: map-get($colores, “blanco”);
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    background-color: map-get($colores, “claro”);
+                    border: 1px solid transparent;
+                    padding: 1rem 2.5rem;
+                    border-radius: 100rem;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+// mantra
+section{
+    #mantra{
+        padding: 8rem 0;
+        margin-bottom: 1rem;
+        background: map-get($colores, “gradiente-verde”);
+        div{
+            div{
+                h2{}
+                .divider{
+                    height: 0.2rem;
+                    max-width: 3.25rem;
+                    margin: 1.5rem auto;
+                    background-color: map-get($colores, "claro") !important;
+                    opacity: 1;
+                    color: map-get($colores, “blanco”);
+                }
+                #mantrasubtitle{
+                    color: white;
+                }
+                .btn2{
+                    font-weight: 500;
+                    color:map-get($colores, "claro");
+                    text-align: center;
+                    text-decoration: none;
+                    cursor: pointer;
+                    background-color: map-get($colores, “blanco”);
+                    border: 1px solid transparent;
+                    padding: 1rem 2.5rem;
+                    border-radius: 100rem;
+                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                }
+            }
+        }
+    }
+}
+
+// services
+    section{
+        #services{
+            padding: 4rem 0;
+            h3{}
+            .divider{
+                height: 0.2rem;
+                max-width: 3.25rem;
+                margin: 1.5rem auto;
+                background-color: map-get($colores, "oscuro") !important;
+                opacity: 1;
+            }
+        }
+            div{
+                div{
+                    div{
+                        div{
+                            i{color: map-get($colores, "claro") !important;}
+                        }
+                        h4{}
+                        p{}
+                }
+                div{
+                    div{
+                        div{
+                            i{color: map-get($colores, "claro") !important;}
+                        }
+                        h4{}
+                        p{}
+                    }
+                }
+                div{
+                    div{
+                        div{
+                            i{color: map-get($colores, "claro") !important;}
+                        }
+                        h4{}
+                        p{}
+                    }
+                }    
+            }
+        }
+    }
+
+// projects
+div{
+    div{
+        // card
+        div{
+            div{
+                div{
+                    h5{}
+                    p{}
+                    a{}
+                }
+            }
+        }    
+        // card
+        div{
+            div{
+                div{
+                    h5{}
+                    p{}
+                    a{}
+                }
+            }
+        }    
+        // card
+        div{
+            div{
+                div{
+                    h5{}
+                    p{}
+                    a{}
+                }
+            }
+        }
+    }
+}

@@ -1,213 +1,239 @@
 /* ------Configuracion de texto y tamano -------*/
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-html{
-    font-size: 16px;
-    font-family: 'Poppins';
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  font-size: 16px;
+  font-family: "Poppins";
 }
 
 /* ---------- RESET ----------*/
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-
-/* ------------index -----------*/
-
-/* navbar */
-
-#header{
-    z-index: 1100;
+footer {
+  background-image: url("../assets/media/wave2.svg");
+  background-repeat: no-repeat;
 }
-
-/* logo */
-.navLogo{
-    height: 5rem;
-    width: 5rem;
-    border-radius: 1000px;
-    padding: 16px;
-    margin-right: auto;
-    cursor: pointer;
+footer div div div .btn2 {
+  font-weight: 500;
+  color: #5BD1CA;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 100rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-
-/* masthead  */
-
-header.masthead {
-    padding-top: 10rem;
-    padding-bottom: calc(10rem - 4.5rem);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/media/bgboot.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 100vh;
-  }
-  header.masthead h1, header.masthead .h1 {
-    font-size: 2.25rem;
-  }
-
-  #titledivider{
-    color: #5BD1CA;
+footer .footericons .icons li a i {
+  color: white !important;
 }
-
-  #subtitle{
-    color: rgb(208, 208, 208) !important;
+footer .footericons .icons li a i {
+  color: white !important;
+}
+footer .footericons .icons li a i {
+  color: white !important;
+}
+@media (max-width: 990px) {
+  .rounded-circle, .footericons, .footerlinks {
+    display: none;
   }
 
-  .btn1 {
-    font-weight: 500;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #5BD1CA;
-    border: 1px solid transparent;
-    padding: 1rem 2.5rem;
-    border-radius: 100rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  .btn2 {
+    margin-bottom: 0;
   }
 
-/* services */
-
-hr.divider {
-    height: 0.2rem;
-    max-width: 3.25rem;
-    margin: 1.5rem auto;
-    background-color: #8EE5E0 !important;
-    opacity: 1;
+  .icons {
+    margin: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
-
-
-div i{
-    color: #5BD1CA !important;
 }
-
-
-.divider{
-    color: #5BD1CA;
-}
-
-
-  /* mantra */
-
-  #mantra{
-    padding: 8rem 0;
-    margin-bottom: 1rem;
-    background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
-  }
-
-  .btn2{
-    font-weight: 500;
-    color: #5BD1CA;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #ffffff;
-    border: 1px solid transparent;
-    padding: 1rem 2.5rem;
-    border-radius: 100rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-  
-#mantrasubtitle{
-    color: white;
-}
-
-
-
-/* services */
-#services{
-    padding: 4rem 0;
-}
-
-/* projects */
-
-#projects{
-    height: 50vh;
-}
-
-/* footer */
-
-footer{
-    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/media/wave.svg"); */
-    background-image: url("../assets/media/wave2.svg"); background-repeat: no-repeat;
-}
-
-li a i{
-    color: white !important;
-}
-
-
-@media (max-width: 990px){
-    .rounded-circle, .footericons, .footerlinks{
-        display: none;
-    }
-    .btn2{
-        margin-bottom: 0;
-    }
-    .icons{
-        margin: 0;
-        flex-direction: row;
-    }
-}
-
-/* -------join the team------ */
-
 .jointheteam {
-    padding-top: 11rem;
-    padding-bottom: calc(10rem - 4.5rem);
-    background-attachment: scroll;
-    background-size: cover;
-    height: 100vh;
-  }
+  padding-top: 11rem;
+  padding-bottom: 5.5rem;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+}
+.jointheteam div div div .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #8EE5E0 !important;
+  opacity: 1;
+  color: #5BD1CA;
+}
+.jointheteam div div div form div .submitbutton {
+  font-weight: 500;
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #5BD1CA !important;
+  border: 1px solid transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 100rem;
+  border-color: transparent;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
 
-  .submitbutton{
-    font-weight: 500;
-    color: #ffffff !important;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #5BD1CA !important;
-    border: 1px solid transparent;
-    padding: 1rem 2.5rem;
-    border-radius: 100rem;
-    border-color: transparent;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  }
-
-  .submitbutton:enabled {
-    font-weight: 500;
-    color: #ffffff !important;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #5BD1CA !important;
-    border: 1px solid transparent;
-    padding: 1rem 2.5rem;
-    border-radius: 100rem;
-    border-color: transparent;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-  }
-
-
-/* our work */
+header {
+  z-index: 1100;
+}
+header div nav div a .navLogo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1000px;
+  padding: 16px;
+  margin-right: auto;
+  cursor: pointer;
+}
 .projects {
-    padding-top: 11rem;
-    padding-bottom: 0;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 50vh;
+  padding-top: 11rem;
+  padding-bottom: 0;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 50vh;
+}
+@media (max-width: 990px) {
+  .projects {
+    margin-bottom: 25rem !important;
   }
+}
+section .services {
+  padding-top: 11rem;
+  margin-bottom: 11rem !important;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 50vh;
+}
+section .services .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #8EE5E0 !important;
+  opacity: 1;
+  color: #5BD1CA;
+}
+section div div div div i {
+  color: #5BD1CA !important;
+}
+section div div div div div i {
+  color: #5BD1CA !important;
+}
+section div div div div div i {
+  color: #5BD1CA !important;
+}
+@media (max-width: 990px) {
+  .services {
+    margin-bottom: 45rem !important;
+  }
+}
+.masthead {
+  padding-top: 10rem;
+  padding-bottom: 5.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../assets/media/bgboot.svg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/media/bgboot.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+  font-size: 2.25rem;
+}
+.masthead div div div h1 {
+  font-size: 2.25rem;
+}
+.masthead div div div .divider {
+  height: 0.2rem;
+  max-width: 10.25rem;
+  margin: 1.5rem auto;
+  background-color: #8EE5E0 !important;
+  opacity: 1;
+  color: #5BD1CA;
+}
+.masthead div div div #subtitle {
+  color: rgb(208, 208, 208) !important;
+  font-size: large;
+}
+.masthead div div div .btn1 {
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #5BD1CA;
+  border: 1px solid transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 100rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
 
-/* services */
-.services {
-    padding-top: 11rem;
-    margin-bottom: 11rem !important;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 50vh;
-  }
+section #mantra {
+  padding: 8rem 0;
+  margin-bottom: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
+  background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
+}
+section #mantra div div .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #8EE5E0 !important;
+  opacity: 1;
+  color: #5BD1CA;
+}
+section #mantra div div #mantrasubtitle {
+  color: white;
+}
+section #mantra div div .btn2 {
+  font-weight: 500;
+  color: #5BD1CA;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 100rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+section #services {
+  padding: 4rem 0;
+}
+section #services .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #8EE5E0 !important;
+  opacity: 1;
+}
+section div div div div i {
+  color: #5BD1CA !important;
+}
+section div div div div div i {
+  color: #5BD1CA !important;
+}
+section div div div div div i {
+  color: #5BD1CA !important;
+}

@@ -1,0 +1,53 @@
+section{
+    .services{
+        padding-top: 11rem;
+        margin-bottom: 11rem !important;
+        background-attachment: scroll;
+        background-size: cover;
+        height: 50vh;
+        h3{}
+        .divider{
+            height: 0.2rem;
+            max-width: 3.25rem;
+            margin: 1.5rem auto;
+            background-color: map-get($colores, "oscuro") !important;
+            opacity: 1;
+            color: map-get($colores, "claro");
+        }
+    }
+        div{
+            div{
+                div{
+                    div{
+                        i{color: map-get($colores, "claro") !important;}
+                    }
+                    h4{}
+                    p{}
+            }
+            div{
+                div{
+                    div{
+                        i{color: map-get($colores, "claro") !important;}
+                    }
+                    h4{}
+                    p{}
+                }
+            }
+            div{
+                div{
+                    div{
+                        i{color: map-get($colores, "claro") !important;}
+                    }
+                    h4{}
+                    p{}
+                }
+            }    
+        }
+    }
+}
+
+@media (max-width: 990px){
+    .services{
+      margin-bottom: 45rem !important;
+    }
+}
