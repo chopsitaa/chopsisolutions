@@ -1,25 +1,16 @@
-/* ------Configuracion de texto y tamano -------*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-html {
-  font-size: 16px;
-  font-family: "Poppins";
-}
-
-/* ---------- RESET ----------*/
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 footer {
   background-image: url("../assets/media/wave2.svg");
   background-repeat: no-repeat;
 }
-footer div div div .btn2 {
+
+.icon {
+  color: #ffffff !important;
+}
+
+.btn2 {
   font-weight: 500;
-  color: #5BD1CA;
+  color: #ffffff;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -32,15 +23,7 @@ footer div div div .btn2 {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
-footer .footericons .icons li a i {
-  color: white !important;
-}
-footer .footericons .icons li a i {
-  color: white !important;
-}
-footer .footericons .icons li a i {
-  color: white !important;
-}
+
 @media (max-width: 990px) {
   .rounded-circle, .footericons, .footerlinks {
     display: none;
@@ -71,7 +54,7 @@ footer .footericons .icons li a i {
   margin: 1.5rem auto;
   background-color: #8EE5E0 !important;
   opacity: 1;
-  color: #5BD1CA;
+  color: #8EE5E0;
 }
 .jointheteam div div div form div .submitbutton {
   font-weight: 500;
@@ -93,7 +76,8 @@ footer .footericons .icons li a i {
 header {
   z-index: 1100;
 }
-header div nav div a .navLogo {
+
+.navLogo {
   height: 5rem;
   width: 5rem;
   border-radius: 1000px;
@@ -101,6 +85,7 @@ header div nav div a .navLogo {
   margin-right: auto;
   cursor: pointer;
 }
+
 .projects {
   padding-top: 11rem;
   padding-bottom: 0;
@@ -108,6 +93,7 @@ header div nav div a .navLogo {
   background-size: cover;
   height: 50vh;
 }
+
 @media (max-width: 990px) {
   .projects {
     margin-bottom: 25rem !important;
@@ -128,15 +114,11 @@ section .services .divider {
   opacity: 1;
   color: #5BD1CA;
 }
-section div div div div i {
+
+.serviceicon {
   color: #5BD1CA !important;
 }
-section div div div div div i {
-  color: #5BD1CA !important;
-}
-section div div div div div i {
-  color: #5BD1CA !important;
-}
+
 @media (max-width: 990px) {
   .services {
     margin-bottom: 45rem !important;
@@ -163,7 +145,6 @@ section div div div div div i {
   margin: 1.5rem auto;
   background-color: #8EE5E0 !important;
   opacity: 1;
-  color: #5BD1CA;
 }
 .masthead div div div #subtitle {
   color: rgb(208, 208, 208) !important;
@@ -171,11 +152,9 @@ section div div div div div i {
 }
 .masthead div div div .btn1 {
   font-weight: 500;
-  color: #ffffff;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: #5BD1CA;
   border: 1px solid transparent;
   padding: 1rem 2.5rem;
   border-radius: 100rem;
@@ -188,16 +167,13 @@ section div div div div div i {
 section #mantra {
   padding: 8rem 0;
   margin-bottom: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
-  background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
 }
 section #mantra div div .divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #8EE5E0 !important;
+  background-color: #5BD1CA !important;
   opacity: 1;
-  color: #5BD1CA;
 }
 section #mantra div div #mantrasubtitle {
   color: white;
@@ -208,7 +184,6 @@ section #mantra div div .btn2 {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: #ffffff;
   border: 1px solid transparent;
   padding: 1rem 2.5rem;
   border-radius: 100rem;
@@ -228,12 +203,7 @@ section #services .divider {
   background-color: #8EE5E0 !important;
   opacity: 1;
 }
-section div div div div i {
-  color: #5BD1CA !important;
-}
-section div div div div div i {
-  color: #5BD1CA !important;
-}
-section div div div div div i {
+
+.serviceicon {
   color: #5BD1CA !important;
 }

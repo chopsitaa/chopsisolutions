@@ -1,41 +1,12 @@
 header{
     z-index: 1100;
-    div{
-        nav{
-            div{
-                // logo
-                a{
-                    .navLogo{
-                        height: 5rem;
-                        width: 5rem;
-                        border-radius: 1000px;
-                        padding: 16px;
-                        margin-right: auto;
-                        cursor: pointer;
-                    }
-                }
-                button{}
-                span{}
-                div{
-                    ul{
-                        li{
-                            a{}
-                        }
-                        li{
-                            a{}
-                        }
-                        li{
-                            a{}
-                        }
-                        li{
-                            a{}
-                        }
-                        li{
-                            a{}
-                        }
-                    }
-                }
-            }
-        }
-    }
+}
+
+.navLogo{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1000px;
+    padding: 16px;
+    margin-right: auto;
+    cursor: pointer;
 }
