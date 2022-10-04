@@ -86,40 +86,29 @@ header {
   cursor: pointer;
 }
 
-.ourworkcontainer .ourwork {
-  padding-top: 8rem;
-  margin-bottom: 8rem !important;
-  background-attachment: scroll;
-  background-size: cover;
-  height: 50vh;
-}
-.ourworkcontainer .ourwork .divider {
-  height: 0.2rem;
-  max-width: 3.25rem;
-  margin: 1.5rem auto;
-  background-color: #5BD1CA !important;
-  opacity: 1;
-  color: #5BD1CA !important;
-}
-
 @media (max-width: 991px) {
   .ourworkcontainer {
     margin-bottom: 25rem !important;
   }
 }
-@media (max-width: 330px) {
+@media (min-width: 329px) and (max-width: 532px) {
   .ourworkcontainer {
     margin-bottom: 28rem !important;
   }
 }
-section .services {
+@media (max-width: 330px) {
+  .ourworkcontainer {
+    margin-bottom: 38rem !important;
+  }
+}
+section .services, section .ourwork {
   padding-top: 11rem;
   margin-bottom: 11rem !important;
   background-attachment: scroll;
   background-size: cover;
   height: 50vh;
 }
-section .services .divider {
+section .services .divider, section .ourwork .divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
@@ -133,18 +122,18 @@ section .services .divider {
 }
 
 @media (max-width: 990px) {
-  .services {
+  .services, .ourwork {
     margin-bottom: 65rem !important;
     padding-bottom: 11rem;
   }
 }
 @media (max-width: 990px) {
-  .services, .servicescontainer {
+  .services, .ourwork, .servicescontainer {
     margin-bottom: 24rem !important;
   }
 }
 @media (max-width: 767px) {
-  .services, .servicescontainer {
+  .services, .ourwork, .servicescontainer {
     margin-bottom: 44rem !important;
   }
 }
@@ -158,7 +147,6 @@ section .services .divider {
   background-attachment: scroll;
   background-size: cover;
   height: 100vh;
-  font-size: 2.25rem;
 }
 .masthead div div div h1 {
   font-size: 2.25rem;
