@@ -6,12 +6,7 @@ section{
         background-size: cover;
         height: 50vh;
         .divider{
-            height: 0.2rem;
-            max-width: 3.25rem;
-            margin: 1.5rem auto;
-            background-color: map-get($colores, "oscuro") !important;
-            opacity: 1;
-            color: map-get($colores, "claro");
+            @include divider-verde;
         }
     }
 }
@@ -22,6 +17,19 @@ section{
 
 @media (max-width: 990px){
     .services{
-      margin-bottom: 45rem !important;
+      margin-bottom: 65rem !important;
+      padding-bottom: 11rem;
+    }
+}
+
+@media (max-width: 990px){
+    .services, .servicescontainer{
+      margin-bottom: 24rem !important;
+    }
+}
+
+@media (max-width: 767px){
+    .services, .servicescontainer{
+      margin-bottom: 44rem !important;
     }
 }

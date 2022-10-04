@@ -1,13 +1,25 @@
-.projects{
-    padding-top: 11rem;
-    padding-bottom: 0;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 50vh;
+.ourworkcontainer{
+  .ourwork{
+      padding-top: 8rem;
+      margin-bottom: 8rem !important;
+      background-attachment: scroll;
+      background-size: cover;
+      height: 50vh;
+      .divider{
+          @include divider-verde;
+      }
+  }
 }
 
-@media (max-width: 990px){
-    .projects{
+@media (max-width: 991px){
+    .ourworkcontainer{
       margin-bottom: 25rem !important;
     }
+}
+
+
+@media (max-width: 330px){
+  .ourworkcontainer{
+    margin-bottom: 28rem !important;
+  }
 }

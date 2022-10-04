@@ -8,12 +8,7 @@
         div{
             div{
                 .divider{
-                    height: 0.2rem;
-                    max-width: 3.25rem;
-                    margin: 1.5rem auto;
-                    background-color: map-get($colores, "oscuro") !important;
-                    opacity: 1;
-                    color: map-get($colores, "oscuro");
+                    @include divider-verde;
                 }
             }
         }
@@ -23,17 +18,7 @@
                     // submit button
                     div{
                         .submitbutton{
-                            font-weight: 500;
-                            color: map-get($colores, "blanco") !important;
-                            text-align: center;
-                            text-decoration: none;
-                            cursor: pointer;
-                            background-color: map-get($colores, "claro") !important;
-                            border: 1px solid transparent;
-                            padding: 1rem 2.5rem;
-                            border-radius: 100rem;
-                            border-color: transparent;
-                            transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                            @include submit-button;
                         }
                     }
                 }

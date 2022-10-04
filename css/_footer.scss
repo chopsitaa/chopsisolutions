@@ -8,16 +8,7 @@ footer{
 }
 
 .btn2{
-    font-weight: 500;
-    color: map-get($colores, "blanco"); 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: map-get($colores, "blanco");
-    border: 1px solid transparent;
-    padding: 1rem 2.5rem;
-    border-radius: 100rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    @include btn-blanco;
 }
 
 @media (max-width: 990px){

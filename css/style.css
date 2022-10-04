@@ -10,11 +10,11 @@ footer {
 
 .btn2 {
   font-weight: 500;
-  color: #ffffff;
+  color: #8EE5E0 !important;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  background-color: #ffffff;
+  background-color: #ffffff !important;
   border: 1px solid transparent;
   padding: 1rem 2.5rem;
   border-radius: 100rem;
@@ -52,9 +52,9 @@ footer {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #8EE5E0 !important;
+  background-color: #5BD1CA !important;
   opacity: 1;
-  color: #8EE5E0;
+  color: #5BD1CA !important;
 }
 .jointheteam div div div form div .submitbutton {
   font-weight: 500;
@@ -86,17 +86,30 @@ header {
   cursor: pointer;
 }
 
-.projects {
-  padding-top: 11rem;
-  padding-bottom: 0;
+.ourworkcontainer .ourwork {
+  padding-top: 8rem;
+  margin-bottom: 8rem !important;
   background-attachment: scroll;
   background-size: cover;
   height: 50vh;
 }
+.ourworkcontainer .ourwork .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #5BD1CA !important;
+  opacity: 1;
+  color: #5BD1CA !important;
+}
 
-@media (max-width: 990px) {
-  .projects {
+@media (max-width: 991px) {
+  .ourworkcontainer {
     margin-bottom: 25rem !important;
+  }
+}
+@media (max-width: 330px) {
+  .ourworkcontainer {
+    margin-bottom: 28rem !important;
   }
 }
 section .services {
@@ -110,9 +123,9 @@ section .services .divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #8EE5E0 !important;
+  background-color: #5BD1CA !important;
   opacity: 1;
-  color: #5BD1CA;
+  color: #5BD1CA !important;
 }
 
 .serviceicon {
@@ -121,7 +134,18 @@ section .services .divider {
 
 @media (max-width: 990px) {
   .services {
-    margin-bottom: 45rem !important;
+    margin-bottom: 65rem !important;
+    padding-bottom: 11rem;
+  }
+}
+@media (max-width: 990px) {
+  .services, .servicescontainer {
+    margin-bottom: 24rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .services, .servicescontainer {
+    margin-bottom: 44rem !important;
   }
 }
 .masthead {
@@ -141,10 +165,11 @@ section .services .divider {
 }
 .masthead div div div .divider {
   height: 0.2rem;
-  max-width: 10.25rem;
+  max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #8EE5E0 !important;
+  background-color: #5BD1CA !important;
   opacity: 1;
+  color: #5BD1CA !important;
 }
 .masthead div div div #subtitle {
   color: rgb(208, 208, 208) !important;
@@ -152,9 +177,11 @@ section .services .divider {
 }
 .masthead div div div .btn1 {
   font-weight: 500;
+  color: #8EE5E0 !important;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  background-color: #ffffff !important;
   border: 1px solid transparent;
   padding: 1rem 2.5rem;
   border-radius: 100rem;
@@ -162,11 +189,15 @@ section .services .divider {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  color: #ffffff !important;
+  background-color: #8EE5E0 !important;
 }
 
 section #mantra {
   padding: 8rem 0;
   margin-bottom: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
+  background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
 }
 section #mantra div div .divider {
   height: 0.2rem;
@@ -174,16 +205,19 @@ section #mantra div div .divider {
   margin: 1.5rem auto;
   background-color: #5BD1CA !important;
   opacity: 1;
+  color: #5BD1CA !important;
+  color: #ffffff;
 }
 section #mantra div div #mantrasubtitle {
   color: white;
 }
 section #mantra div div .btn2 {
   font-weight: 500;
-  color: #5BD1CA;
+  color: #8EE5E0 !important;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
+  background-color: #ffffff !important;
   border: 1px solid transparent;
   padding: 1rem 2.5rem;
   border-radius: 100rem;
@@ -200,8 +234,9 @@ section #services .divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #8EE5E0 !important;
+  background-color: #5BD1CA !important;
   opacity: 1;
+  color: #5BD1CA !important;
 }
 
 .serviceicon {

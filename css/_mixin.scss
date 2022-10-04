@@ -1,0 +1,46 @@
+@mixin submit-button {
+    font-weight: 500;
+    color: map-get($colores, "blanco") !important;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: map-get($colores, "claro") !important;
+    border: 1px solid transparent;
+    padding: 1rem 2.5rem;
+    border-radius: 100rem;
+    border-color: transparent;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@mixin divider-verde {
+    height: 0.2rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: map-get($colores, "claro") !important;
+    opacity: 1;
+    color: map-get($colores, "claro") !important;
+}
+
+@mixin divider-blanco {
+    @include divider-verde;
+    color: map-get($colores, "blanco");
+}
+
+@mixin btn-blanco {
+    font-weight: 500;
+    color: map-get($colores, "oscuro") !important; 
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: map-get($colores, "blanco") !important;
+    border: 1px solid transparent;
+    padding: 1rem 2.5rem;
+    border-radius: 100rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@mixin btn-verde {
+    @include btn-blanco;
+    color: map-get($colores, "blanco") !important; 
+    background-color: map-get($colores, "oscuro") !important;
+}

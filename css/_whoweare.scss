@@ -16,12 +16,7 @@
                     font-size: 2.25rem;
                 }
                 .divider{
-                    height: 0.2rem;
-                    max-width: 10.25rem;
-                    margin: 1.5rem auto;
-                    background-color: map-get($colores, oscuro) !important;
-                    opacity: 1;
-                    color: map-get($colores, “claro”);
+                    @include divider-verde;
                 }
             }
             div{
@@ -30,16 +25,7 @@
                     font-size: large;
                 }
                 .btn1{
-                    font-weight: 500;
-                    color: map-get($colores, “blanco”);
-                    text-align: center;
-                    text-decoration: none;
-                    cursor: pointer;
-                    background-color: map-get($colores, “claro”);
-                    border: 1px solid transparent;
-                    padding: 1rem 2.5rem;
-                    border-radius: 100rem;
-                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                    @include btn-verde;
                 }
             }
         }
@@ -51,31 +37,17 @@ section{
     #mantra{
         padding: 8rem 0;
         margin-bottom: 1rem;
-        background: map-get($colores, “gradiente-verde”);
+        background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
         div{
             div{
                 .divider{
-                    height: 0.2rem;
-                    max-width: 3.25rem;
-                    margin: 1.5rem auto;
-                    background-color: map-get($colores, "claro") !important;
-                    opacity: 1;
-                    color: map-get($colores, “blanco”);
+                    @include divider-blanco;
                 }
                 #mantrasubtitle{
                     color: white;
                 }
                 .btn2{
-                    font-weight: 500;
-                    color:map-get($colores, "claro");
-                    text-align: center;
-                    text-decoration: none;
-                    cursor: pointer;
-                    background-color: map-get($colores, “blanco”);
-                    border: 1px solid transparent;
-                    padding: 1rem 2.5rem;
-                    border-radius: 100rem;
-                    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                    @include btn-blanco;
                 }
             }
         }
@@ -87,11 +59,7 @@ section{
     #services{
         padding: 4rem 0;
         .divider{
-            height: 0.2rem;
-            max-width: 3.25rem;
-            margin: 1.5rem auto;
-            background-color: map-get($colores, "oscuro") !important;
-            opacity: 1;
+            @include divider-verde;
         }
      }
 }
