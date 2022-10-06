@@ -11,8 +11,9 @@ footer{
     @include btn-blanco;
 }
 
+
 @media (max-width: 990px){
-    .rounded-circle, .footericons, .footerlinks{
+    .rounded-circle, .footerlinks{
         display: none;
     }
     .btn2{
@@ -20,6 +21,9 @@ footer{
     }
     .icons{
         margin: 0;
+        flex-direction: row;
+    }
+    .footericons, .icons{
         flex-direction: row;
     }
 }
