@@ -31,6 +31,22 @@
     }
 }
 
+#aboutus{
+    padding-top: 4rem;
+    margin-bottom: 4rem !important;
+    background-attachment: scroll;
+    background-size: cover;
+    height: 50vh;
+    .divider{
+        @include divider-verde;
+    }
+}
+
+.bulletpoint{
+    color: map-get($map: $colores, $key: dark) !important;
+}
+
+
 // mantra
 section{
     #mantra{
@@ -66,3 +82,5 @@ section{
 .serviceicon{
     color: map-get($colores, "claro") !important;;
 }
+
+

@@ -25,7 +25,7 @@ footer {
 }
 
 @media (max-width: 990px) {
-  .rounded-circle, .footericons, .footerlinks {
+  .rounded-circle, .footerlinks {
     display: none;
   }
 
@@ -35,6 +35,13 @@ footer {
 
   .icons {
     margin: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .footericons, .icons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -179,6 +186,26 @@ section .services .divider, section .ourwork .divider {
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   color: #ffffff !important;
   background-color: #8EE5E0 !important;
+}
+
+#aboutus {
+  padding-top: 4rem;
+  margin-bottom: 4rem !important;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 50vh;
+}
+#aboutus .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #5BD1CA !important;
+  opacity: 1;
+  color: #5BD1CA !important;
+}
+
+.bulletpoint {
+  color: #22ccc3 !important;
 }
 
 section #mantra {
