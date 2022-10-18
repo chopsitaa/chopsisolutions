@@ -19,32 +19,49 @@ footer {
   color: #ffffff !important;
 }
 
-.btn2 {
+.botonfooter {
   font-weight: 500;
-  color: #8EE5E0 !important;
-  text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  background-color: #ffffff !important;
-  border: 1px solid transparent !important;
-  padding: 1rem 2.5rem;
-  border-radius: 100rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #22ccc3;
+}
+.botonfooter:hover {
+  background: #22ccc3;
+  border: 2px solid #22ccc3;
+  color: #ffffff;
 }
 
 @media (max-width: 990px) {
   .rounded-circle, .footerlinks {
     display: none;
   }
+
   .btn2 {
     margin-bottom: 0;
   }
+
   .icons {
     margin: 0;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
+
   .footericons, .icons {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 body {
@@ -54,6 +71,7 @@ body {
 .masthead {
   padding-top: 10rem;
   padding-bottom: 5.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../assets/media/bgboot.svg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/media/bgboot.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -76,26 +94,25 @@ body {
   color: rgb(208, 208, 208) !important;
   font-size: large;
 }
-.masthead div div div .btn1 {
-  background-color: #00fff0 !important;
+.masthead div div div .boton {
   font-weight: 500;
-  color: #8EE5E0 !important;
-  text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  background-color: #ffffff !important;
-  border: 1px solid transparent !important;
-  padding: 1rem 2.5rem;
-  border-radius: 100rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  color: #ffffff !important;
-  background-color: #8EE5E0 !important;
-  box-shadow: 0px 12px 15px rgba(18, 38, 63, 0.05);
-  -webkit-transition-duration: 0.3s;
-  transition-property: box-shadow, transform;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #22ccc3;
+  background-color: #22ccc3;
+  color: #ffffff;
 }
-.masthead div div div .btn1 :hover {
-  transform: scale(1.1);
+.masthead div div div .boton:hover {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #22ccc3;
 }
 
 #aboutus {
@@ -121,6 +138,7 @@ body {
 section #mantra {
   padding: 8rem 0;
   margin-bottom: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
   background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
 }
 section #mantra div div .divider {
@@ -135,17 +153,25 @@ section #mantra div div .divider {
 section #mantra div div #mantrasubtitle {
   color: white;
 }
-section #mantra div div .btn2 {
+section #mantra div div .botondos {
   font-weight: 500;
-  color: #8EE5E0 !important;
-  text-align: center;
   text-decoration: none;
-  cursor: pointer;
-  background-color: #ffffff !important;
-  border: 1px solid transparent !important;
-  padding: 1rem 2.5rem;
-  border-radius: 100rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  color: #22ccc3;
+}
+section #mantra div div .botondos:hover {
+  background: #22ccc3;
+  border: 2px solid #22ccc3;
+  color: #ffffff;
 }
 
 section #services {
@@ -187,6 +213,7 @@ section #services .divider {
   padding: 6px 30px 8px 30px;
   color: #22ccc3;
   border-radius: 50px;
+  -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
   text-decoration: none;
 }
@@ -196,8 +223,8 @@ section #services .divider {
 }
 
 .why-us .why-box .more-btn:hover {
-  color: var(--color-primary);
-  background: #fff;
+  color: #ffffff;
+  background: #22ccc3;
 }
 
 .why-us .icon-box {
@@ -207,18 +234,25 @@ section #services .divider {
   width: 100%;
   height: 100%;
   border: 1px solid rgba(55, 55, 63, 0.1);
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .why-us .icon-box i {
-  color: var(--color-primary);
+  color: #22ccc3;
   margin-bottom: 30px;
   font-size: 32px;
   margin-bottom: 30px;
-  background: rgba(206, 18, 18, 0.1);
+  background: #dffffd;
   border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   width: 64px;
   height: 64px;
@@ -238,6 +272,7 @@ section #services .divider {
 
 @media (min-width: 1200px) {
   .why-us .icon-box:hover {
+    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 }
@@ -279,8 +314,14 @@ section #services .divider {
 }
 
 .alt-services .icon-box i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: var(--color-primary);
   margin-right: 25px;
@@ -289,8 +330,10 @@ section #services .divider {
   height: 56px;
   border-radius: 4px;
   line-height: 0;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
   box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
   background-color: #fff;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -307,6 +350,7 @@ section #services .divider {
 
 .alt-services .icon-box h4 a {
   color: #000;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -348,7 +392,10 @@ section #services .divider {
   padding: 1rem 2.5rem;
   border-radius: 100rem;
   border-color: transparent;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 header {
@@ -419,6 +466,7 @@ section .services .divider, section .ourwork .divider {
 .masthead {
   padding-top: 10rem;
   padding-bottom: 5.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../assets/media/bgboot.svg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/media/bgboot.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -455,7 +503,10 @@ section .services .divider, section .ourwork .divider {
   border: 1px solid transparent;
   padding: 1rem 2.5rem;
   border-radius: 100rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   color: #ffffff !important;
   background-color: #8EE5E0 !important;
 }
@@ -484,6 +535,7 @@ section .services .divider, section .ourwork .divider {
 section #mantra {
   padding: 8rem 0;
   margin-bottom: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
   background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
 }
 
@@ -511,7 +563,10 @@ section #mantra div div .btn2 {
   border: 1px solid transparent;
   padding: 1rem 2.5rem;
   border-radius: 100rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 section #services {
@@ -532,6 +587,7 @@ section #services .divider {
 }
 
 .call-to-action .container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/cta-bg.jpg") center center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") center center;
   background-size: cover;
   padding: 100px 60px;
@@ -590,6 +646,7 @@ section #services .divider {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
   transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
@@ -597,6 +654,7 @@ section #services .divider {
   border-bottom: 10px solid transparent;
   border-left: 15px solid #fff;
   z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
@@ -605,6 +663,7 @@ section #services .divider {
   position: absolute;
   left: 50%;
   top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
   transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
@@ -620,6 +679,7 @@ section #services .divider {
 
 .call-to-action .play-btn:hover:after {
   border-left: 15px solid var(--color-primary);
+  -webkit-transform: scale(20);
   transform: scale(20);
 }
 
@@ -631,6 +691,7 @@ section #services .divider {
   display: inline-block;
   padding: 12px 48px;
   border-radius: 50px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
@@ -644,20 +705,24 @@ section #services .divider {
 
 @-webkit-keyframes pulsate-btn {
   0% {
+    -webkit-transform: scale(0.6, 0.6);
     transform: scale(0.6, 0.6);
     opacity: 1;
   }
   100% {
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     opacity: 0;
   }
 }
 @keyframes pulsate-btn {
   0% {
+    -webkit-transform: scale(0.6, 0.6);
     transform: scale(0.6, 0.6);
     opacity: 1;
   }
   100% {
+    -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     opacity: 0;
   }
@@ -695,6 +760,7 @@ section #servicios .divider {
   #about .about-img {
     height: auto;
   }
+
   #about .about-img img {
     margin-left: 0;
     padding-bottom: 30px;
@@ -764,6 +830,7 @@ body {
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -777,6 +844,7 @@ body {
 }
 
 .portfolio .portfolio-wrap {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -791,11 +859,13 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
+  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
   z-index: 2;
 }
 
 .portfolio .portfolio-wrap img {
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
   z-index: 1;
@@ -809,6 +879,7 @@ body {
   text-align: center;
   z-index: 3;
   position: absolute;
+  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -824,6 +895,7 @@ body {
   width: 32px;
   height: 32px;
   display: inline-block;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -845,6 +917,7 @@ body {
   right: 0;
   text-align: center;
   z-index: 3;
+  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -904,7 +977,8 @@ body {
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(122, 105, 96, 0.08);
+  -webkit-box-shadow: 0px 0 30px rgba(122, 105, 96, 0.08);
+          box-shadow: 0px 0 30px rgba(122, 105, 96, 0.08);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -940,6 +1014,7 @@ body {
 }
 
 .call-to-action .container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/media/collegevine.svg") center center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/media/collegevine.svg") center center;
   background-size: cover;
   padding: 100px 60px;
@@ -964,6 +1039,7 @@ body {
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
   background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
   border-radius: 50%;
   display: inline-block;
@@ -999,13 +1075,15 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-40%) translateY(-50%);
+  -webkit-transform: translateX(-40%) translateY(-50%);
+          transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 15px solid #fff;
   z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
@@ -1014,7 +1092,8 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateX(-40%) translateY(-50%);
+  -webkit-transform: translateX(-40%) translateY(-50%);
+          transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
   border: none;
@@ -1029,16 +1108,19 @@ body {
 
 .call-to-action .play-btn:hover:after {
   border-left: 15px solid #22ccc3;
-  transform: scale(20);
+  -webkit-transform: scale(20);
+          transform: scale(20);
 }
 
 .call-to-action .cta-btn {
   font-weight: 500;
+  text-decoration: none;
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 48px;
   border-radius: 50px;
+  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
@@ -1052,11 +1134,13 @@ body {
 
 @keyframes pulsate-btn {
   0% {
-    transform: scale(0.6, 0.6);
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
     opacity: 1;
   }
   100% {
-    transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
     opacity: 0;
   }
-}/*# sourceMappingURL=style.css.map */
+}

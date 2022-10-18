@@ -7,8 +7,8 @@ footer{
     color: map-get($colores, "blanco") !important;
 }
 
-.btn2{
-    @include btn-blanco;
+.botonfooter{
+    @include boton-blanco;
 }
 
 

@@ -27,13 +27,12 @@ body{
                   color: rgb(208, 208, 208) !important;
                   font-size: large;
               }
-              .btn1{
-                  background-color: #00fff0 !important;
-                  @include btn-verde;
+              .boton {
+                @include boton-verde
               }
           }
-      }
-  }
+       }
+   }
 }
 
 #aboutus{
@@ -66,8 +65,8 @@ section{
               #mantrasubtitle{
                   color: white;
               }
-              .btn2{
-                  @include btn-blanco;
+              .botondos{
+                  @include boton-blanco;
                   }
               }
           }
@@ -126,8 +125,8 @@ section{
 }
 
 .why-us .why-box .more-btn:hover {
-  color: var(--color-primary);
-  background: #fff;
+  color: map-get($map: $colores, $key: blanco);
+  background: map-get($map: $colores, $key: dark);
 }
 
 .why-us .icon-box {
@@ -142,11 +141,11 @@ section{
 }
 
 .why-us .icon-box i {
-  color: var(--color-primary);
+  color: map-get($map: $colores, $key: dark);
   margin-bottom: 30px;
   font-size: 32px;
   margin-bottom: 30px;
-  background: rgba(206, 18, 18, 0.1);
+  background: map-get($map: $colores, $key: superclaro);;
   border-radius: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
