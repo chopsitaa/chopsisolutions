@@ -29,67 +29,179 @@
 
 <body>
 
-    <!-- apertura fila de logo + nav --> 
-
-    <header class="container-fluid">
+    <header class="container-fluid p-0">
         <!-- Navbar -->
-        <div class="row bg-info text-center">
-            <nav class="col navbar navbar-expand-lg navbar-light fixed-top py-3">
-                <div class="container-fluid px-4 px-lg-5">
+        <div class="row bg-info text-center p-0 m-0 pb-5">
+            <nav class="col navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+                <div class="container-fluid px-4 px-lg-5 p-0 m-0">
                     <!-- logo -->
-                    <a class="navbar-brand" href="../index.html"><img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo"></a>
+                    <a class="navbar-brand" href="./index.html"><img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo"></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto my-2 my-lg-0">
                             <li class="nav-item"><a class="nav-link" href="../index.html">Who we are</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="../pages/services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/our-work.html">Our work</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/get-in-touch.html">Get in touch</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/join-the-team.html">Join the team</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="./services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./our-work.html">Our work</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./get-in-touch.html">Get in touch</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./join-the-team.html">Join the team</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-    </header>
+    
+      </header>
 
     <!-- services -->
-        <section class="page-section servicescontainer">
-            <div class="container px-4 px-lg-5 services">
-                <h1 class="text-center mt-0 animate__animated animate__fadeIn">At Your Service</h1>
-                <hr class="divider"/>
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-lg-3 col-md-6 text-center animate__animated animate__bounceInLeft">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-lightbulb fs-1 serviceicon"></i></div>
-                            <h4 class="h4 mb-2">Strategy & Ideation</h4>
-                            <p class="text-muted mb-0">Discover & envision products for tomorrow by challenging the status quo.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center animate__animated animate__bounceInUp">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-laptop fs-1 serviceicon"></i></div>
-                            <h4 class="h4 mb-2">Product Design (UX UI)</h4>
-                            <p class="text-muted mb-0">Bring your ideas to life through whole-hearted human-centric design.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center animate__animated animate__bounceInDown">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-file-earmark-code fs-1 serviceicon"></i></div>
-                            <h4 class="h4 mb-2">Product Development</h4>
-                            <p class="text-muted mb-0">Take your product to the next stage, while staying agile, nimble, and flexible.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 text-center animate__animated animate__bounceInRight">
-                        <div class="mt-5">
-                            <div class="mb-2"><i class="bi-megaphone fs-1 serviceicon"></i></div>
-                            <h4 class="h4 mb-2">Branding</h4>
-                            <p class="text-muted mb-0">Fuel your brand through design empowerment, and early market adoption.</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="page-section pt-5">
+            <div class="container pt-5 servicios">
+                <h2>Services</h2>
+                <p>Check out our incredible services</p>
             </div>
         </section>
+
+
+  <!-- ======= Strategy & Ideation ======= -->
+  <section id="about" class="section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+        <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
+          <img src="../assets/media/strategy.svg" alt="">
+        </div>
+
+        <div class="col-lg-6 content" data-aos="fade-left" dat-aos-delay="100">
+          <h2>Strategy & Ideation</h2>
+          <h3>We work with our clients to accelerate the realization of their strategic ambitions</h3>
+          <p>
+            We help innovation teams by managing the entire concept and idea development process and accelerate innovation outcomes including:
+          </p>
+
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Growth Plan Realization</li>
+            <li><i class="bi bi-check-circle"></i> Supply Chain Optimization</li>
+            <li><i class="bi bi-check-circle"></i> Innovation + New Product Development</li>
+            <li><i class="bi bi-check-circle"></i> Speed to Market</li>
+          </ul>
+
+          <p>
+            In a fast-changing world, executing against a strategy is just as important as formulating the right strategy. The common denominator for successfully executing strategy is not analysis, tools, or technologies, though these can certainly be enablers. The most effective lever is engaging more people in providing information/insights and in executing change.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-6 content" data-aos="fade-left" dat-aos-delay="100">
+          <h2>Product Design (UX UI)</h2>
+          <h3> Our Experience Design is based on designing products to make people smile</h3>
+          <p>
+            Our principal services of product design are:
+          </p>
+
+          <ul>
+            <li><i class="bi bi-check-circle"></i> User Experience Design</li>
+            <li><i class="bi bi-check-circle"></i> User Interface Design</li>
+            <li><i class="bi bi-check-circle"></i> UX Audit</li>
+            <li><i class="bi bi-check-circle"></i> User Experience Research</li>
+            <li><i class="bi bi-check-circle"></i> Staff Augmentation</li>
+            <li><i class="bi bi-check-circle"></i> UX Writing</li>
+
+          </ul>
+
+          <p>
+            We collect information from both your internal and external environments. We design products with people in mind. Products that are intuitive, and allow users to achieve monumental achievements, by using the principles and conditions of the psychology of flow.
+          </p>
+        </div>
+
+        <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
+            <img src="../assets/media/uxui.svg" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="section-bg">
+        <div class="container" data-aos="fade-up">
+    
+          <div class="row">
+            <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
+              <img src="../assets/media/development.svg" alt="">
+            </div>
+    
+            <div class="col-lg-6 content" data-aos="fade-left" dat-aos-delay="100">
+              <h2>Product Development</h2>
+              <h3>Battle tested software solutions, built for scale</h3>
+              <p>
+                Our principal services of product development are:
+              </p>
+    
+              <ul>
+                <li><i class="bi bi-check-circle"></i> Web Development</li>
+                <li><i class="bi bi-check-circle"></i> Mobile Development</li>
+                <li><i class="bi bi-check-circle"></i> Internet of Things</li>
+                <li><i class="bi bi-check-circle"></i> Cyber SeCurity Solutions</li>
+                <li><i class="bi bi-check-circle"></i> Data Engineering Solutions</li>
+                <li><i class="bi bi-check-circle"></i> Artificial Intelligence Applications (AI)</li>
+                <li><i class="bi bi-check-circle"></i> Support & Maintenance</li>
+              </ul>
+    
+              <p>
+                We design, build and ship secure and high-quality software. Our team architects it for scale, using battle-tested software solutions, high levels of automation and machine learning-technologies.
+              </p>
+            </div>
+          </div>
+    
+        </div>
+      </section><!-- End About Section -->
+
+
+      <!-- ======= About Section ======= -->
+  <section id="about" class="section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row">
+
+        <div class="col-lg-6 content" data-aos="fade-left" dat-aos-delay="100">
+          <h2>Branding</h2>
+          <h3>Storytelling, arguably the most powerful tool that does your selling for you</h3>
+          <p>
+            Our principal services of branding are:
+          </p>
+
+          <ul>
+            <li><i class="bi bi-check-circle"></i> Brand identity design</li>
+            <li><i class="bi bi-check-circle"></i> Copywriting</li>
+            <li><i class="bi bi-check-circle"></i> Brand discovery</li>
+            <li><i class="bi bi-check-circle"></i> Brand strategy & design</li>
+          </ul>
+
+          <p>
+            Driven by our holistic approach, we work together to design a complete branding solution from naming, logo design, to communication and style guides, creating a cohesive experience across all mediums and touchpoints.
+          </p>
+        </div>
+
+        <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
+            <img src="../assets/media/branding.svg" alt="">
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+
+    
 
     <!-- footer --> 
     <footer class="text-center text-lg-start text-white">
@@ -100,7 +212,7 @@
                     <img class="rounded-circle" src="../assets/media/chopsionline.jpeg" height="50" alt="logo" />
                     </div>        
                     <p class="">We’re proud to be one of the world's best agencies</p>
-                    <a class="btn btn-primary btn-sm btn2" href="./pages/get-in-touch.html">GET IN TOUCH!</a>
+                    <a class="btn btn-sm btn2" href="./pages/get-in-touch.html">GET IN TOUCH!</a>
                 </div>
         
                 <!--links-->

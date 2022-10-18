@@ -31,97 +31,141 @@
 
     <!-- apertura fila de logo + nav --> 
 
-    <header class="container-fluid">
-        <!-- Navbar -->
-        <div class="row bg-info text-center">
-            <nav class="col navbar navbar-expand-lg navbar-light fixed-top py-3">
-                <div class="container-fluid px-4 px-lg-5">
-                    <!-- logo -->
-                    <a class="navbar-brand" href="../index.html"><img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo"></a>
-                    <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                            <li class="nav-item"><a class="nav-link" href="../index.html">Who we are</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="../pages/our-work.html">Our work</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/get-in-touch.html">Get in touch</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/join-the-team.html">Join the team</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
+    <header class="container-fluid p-0">
+      <!-- Navbar -->
+      <div class="row bg-info text-center p-5 m-0">
+          <nav class="col navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+              <div class="container-fluid px-4 px-lg-5 p-0 m-0">
+                  <!-- logo -->
+                  <a class="navbar-brand" href="./index.html"><img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo"></a>
+                  <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                  <div class="collapse navbar-collapse" id="navbarResponsive">
+                      <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                          <li class="nav-item"><a class="nav-link" href="../index.html">Who we are</a></li>
+                          <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                          <li class="nav-item"><a class="nav-link active" href="./our-work.html">Our work</a></li>
+                          <li class="nav-item"><a class="nav-link" href="./get-in-touch.html">Get in touch</a></li>
+                          <li class="nav-item"><a class="nav-link" href="./join-the-team.html">Join the team</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+      </div>
+  
     </header>
 
-        <!-- projects -->
-    <section class="page-section ourworkcontainer">
-        <div class="container px-4 px-lg-5 ourwork">
-            <h1 class="text-center mt-0 animate__animated animate__fadeIn">Our work</h1>
-            <hr class="divider"/>
-            <div class="container-flex my-5 projects">
-                <div class="row">
-               <!-- Card -->
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 animate__animated animate__bounceInLeft">
-                    <div
-                        class="bg-image card shadow-1-strong"
-                        style="
-                                background-image: url(../assets/media/collegevineboot.webp);
-                                "
-                        >
-                    <div class="card-body text-white">
-                        <h5 class="card-title">College Vine</h5>
-                        <p class="card-text">
-                            Connects to colleges, advisors, peers, and admissions offices.
-                        </p>
-                        <a href="https://www.collegevine.com/" target=”_blank” class="btn btn-outline-light">Case Study</a>
-                    </div>
-                    </div>
-                    <!-- Card -->
-                </div>
-            
-                <div class="col-lg-4 mb-4 mb-lg-0 animate__animated animate__bounceInUp">
-                    <!-- Card -->
-                    <div
-                        class="bg-image card shadow-1-strong"
-                        style="
-                                background-image: url(../assets/media/colabboot.webp);
-                                "
-                        >
-                    <div class="card-body text-white">
-                        <h5 class="card-title">Colab</h5>
-                        <p class="card-text">
-                            Post a job, hire, learn about your business and boost your brand.
-                        </p>
-                        <a href="https://www.fiverr.com/" target=”_blank” class="btn btn-outline-light">Case Study</a>
-                    </div>
-                    </div>
-                    <!-- Card -->
-                </div>
-            
-                <div class="col-lg-4 mb-4 mb-lg-0 animate__animated animate__bounceInRight">
-                    <!-- Card -->
-                    <div
-                        class="bg-image card shadow-1-strong"
-                        style="
-                                background-image: url(../assets/media/oneboot.webp);
-                                "
-                        >
-                    <div class="card-body text-white">
-                        <h5 class="card-title">1% Software</h5>
-                        <p class="card-text">
-                            Custom your Software and build a fully automated company.
-                        </p>
-                        <a href="https://theonepercentsoftware.com/" target=”_blank” class="btn btn-outline-light">Case Study</a>
-                    </div>
-                    </div>
-                    <!-- close card -->
-                </div>
-                <!-- close row -->
-            </div> 
-            <!-- close projects -->
+
+    <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container pb-5" data-aos="fade-up">
+
+      <div class="section-title pt-5">
+        <h2>Portfolio</h2>
+        <p>Check out our beautifull portfolio</p>
+      </div>
+
+
+      <div class="row portfolio-container pt-5" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="../assets/media/cryptoland.svg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a target=”_blank href="https://www.figma.com/proto/SyZSSJ2KE5EgHhWIs89MCO/Portfolio?page-id=0%3A1&node-id=371%3A166109&viewport=241%2C48%2C0.14&scaling=scale-down-width&starting-point-node-id=367%3A138334" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+            <div class="portfolio-info">
+              <h4>Cryptoland</h4>
+              <p>Client</p>
+            </div>
+          </div>
         </div>
-        <!-- close ourworkcontainer -->
-    </section>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="../assets/media/healthgo.svg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a target=”_blank href="https://www.figma.com/proto/SyZSSJ2KE5EgHhWIs89MCO/Portfolio?page-id=0%3A1&node-id=371%3A163294&viewport=241%2C48%2C0.14&scaling=scale-down-width&starting-point-node-id=367%3A138334" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+            <div class="portfolio-info">
+              <h4>HealthGo</h4>
+              <p>Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="../assets/media/collegevine.svg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a target=”_blank href="https://www.collegevine.com/" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+            <div class="portfolio-info">
+              <h4>CollegeVine</h4>
+              <p>Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="portfolio-wrap">
+            <img src="../assets/media/onepercent.svg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a target=”_blank href="https://theonepercentsoftware.com/" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+            <div class="portfolio-info">
+              <h4>One Percent Software</h4>
+              <p>Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="portfolio-wrap">
+            <img src="../assets/media/pedidosya.svg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a target=”_blank href="https://www.pedidosya.com.ar/?sem_tracker=740125327&pycat=googlesearch&cmp=&ag=pedidosya%20%20%28e%29&kwd=pedidosya&mt=e&net=g&dev=c&sitelink=&gclid=CjwKCAjw-rOaBhA9EiwAUkLV4h9L7jnEAPvj7uxAyyuXKnDBP-B74fKbWOIa5d8Uyys-Tm4qw71fLhoCYJYQAvD_BwE" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+            <div class="portfolio-info">
+              <h4>PedidosYa</h4>
+              <p>Client</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <img src="../assets/media/colab.svg" class="img-fluid" alt="">
+            <div class="portfolio-links">
+              <a target=”_blank href="https://www.figma.com/proto/SyZSSJ2KE5EgHhWIs89MCO/Portfolio?page-id=0%3A1&node-id=371%3A181330&viewport=241%2C48%2C0.14&scaling=scale-down-width&starting-point-node-id=367%3A138334" title="More Details"><i class="bi bi-link"></i></a>
+            </div>
+            <div class="portfolio-info">
+              <h4>Colab</h4>
+              <p>Client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Portfolio Section -->
+
+
+
+
+
+  <!-- ======= Call To Action Section ======= -->
+  <section id="call-to-action" class="call-to-action">
+    <div class="container text-center" data-aos="zoom-out">
+      <a href="https://www.figma.com/proto/SyZSSJ2KE5EgHhWIs89MCO/Portfolio?page-id=0%3A1&node-id=374%3A167698&viewport=241%2C48%2C0.14&scaling=scale-down-width&starting-point-node-id=367%3A138334" target=”_blank class="glightbox play-btn"></a>
+      <h3>Sneek peak our case studies and watch our prototypes!</h3>
+      <a class="cta-btn" href="https://www.figma.com/proto/SyZSSJ2KE5EgHhWIs89MCO/Portfolio?page-id=0%3A1&node-id=374%3A167698&viewport=241%2C48%2C0.14&scaling=scale-down-width&starting-point-node-id=367%3A138334" target=”_blank>GO NOW</a>
+    </div>
+  </section>
+  <!-- End Call To Action Section -->
+
+  
+
+
 
     <!-- footer --> 
     <footer class="text-center text-lg-start text-white">

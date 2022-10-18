@@ -1,37 +1,74 @@
+
+// services
 section{
-    .services{
+    #servicios{
         padding-top: 11rem;
-        margin-bottom: 11rem !important;
-        background-attachment: scroll;
-        background-size: cover;
-        height: 50vh;
         .divider{
             @include divider-verde;
         }
+     }
+  }
+
+  /* About Us Section
+--------------------------------*/
+#about {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+  
+  #about .about-img {
+    height: 510px;
+    overflow: hidden;
+  }
+  
+  #about .about-img img {
+    margin-left: -15px;
+    max-width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    #about .about-img {
+      height: auto;
     }
-}
-
-.serviceicon{
-    color: map-get($colores, "claro") !important;;
-}
-
-@media (max-width: 990px){
-    .services{
-      margin-bottom: 65rem !important;
-      padding-bottom: 11rem;
+  
+    #about .about-img img {
+      margin-left: 0;
+      padding-bottom: 30px;
     }
-}
-
-@media (max-width: 990px){
-    .services, .servicescontainer{
-      margin-bottom: 24rem !important;
-    }
-}
-
-@media (max-width: 767px){
-    .services, .servicescontainer{
-      margin-bottom: 44rem !important;
-    }
-}
-
-
+  }
+  #about .content .h2 {
+    color: #333;
+    font-weight: 300;
+    font-size: 24px;
+  }
+  
+  #about .content h3 {
+    color: #777;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 26px;
+    font-style: italic;
+  }
+  
+  #about .content p {
+    line-height: 26px;
+  }
+  
+  #about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  #about .content i {
+    font-size: 20px;
+    padding-right: 4px;
+    color: #1dc8cd;
+  }
+  
+  #about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #about .content ul li {
+    padding-bottom: 10px;
+  }

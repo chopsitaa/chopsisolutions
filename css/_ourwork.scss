@@ -1,33 +1,12 @@
-.ourwork{
-    @extend .services;
+body{
+  overflow-x: hidden
 }
-
-@media (max-width: 991px){
-    .ourworkcontainer{
-      margin-bottom: 25rem !important;
-    }
-}
-
-@media (min-width:329px) and (max-width:532px){
-  .ourworkcontainer{
-    margin-bottom: 28rem !important;
-  }
-}
-
-@media (max-width:330px){
-  .ourworkcontainer{
-    margin-bottom: 38rem !important;
-  }
-}
-
-
 
  /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
   margin-bottom: 30px;
-  @extend .services;
 }
 
 .portfolio #portfolio-flters {
@@ -45,14 +24,13 @@
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
-  color: #212529;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #eb5d1e;
+  color: map-get($map: $colores, $key: dark);
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -69,7 +47,6 @@
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(122, 105, 96, 0.6);
   position: absolute;
   left: 100%;
   right: 0;
@@ -97,7 +74,7 @@
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
-  color: #eb5d1e;
+  color: map-get($map: $colores, $key: dark);
   margin: 0 4px;
   line-height: 0;
   background-color: #fff;
@@ -117,7 +94,7 @@
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: #eb5d1e;
+  background: map-get($map: $colores, $key: dark);
   color: #fff;
 }
 
@@ -179,11 +156,11 @@
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #eb5d1e;
+  border: 1px solid map-get($map: $colores, $key: dark);
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #eb5d1e;
+  background-color: map-get($map: $colores, $key: dark);
 }
 
 .portfolio-details .portfolio-info {
@@ -227,10 +204,10 @@
 
 // Call To Action Section
 .call-to-action .container {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/media/videobg.svg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/media/collegevine.svg") center center;
   background-size: cover;
   padding: 100px 60px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   border-radius: 15px;
   overflow: hidden;
 }
@@ -251,7 +228,7 @@
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%),;
   border-radius: 50%;
   display: inline-block;
   position: relative;
@@ -275,7 +252,7 @@
   animation-timing-function: steps;
   opacity: 1;
   border-radius: 50%;
-  border: 5px solid rgba(0, 131, 116, 0.7);
+  border: 5px solid map-get($map: $colores, $key: dark);
   top: -15%;
   left: -15%;
   background: rgba(198, 16, 0, 0);
@@ -315,12 +292,11 @@
 }
 
 .call-to-action .play-btn:hover:after {
-  border-left: 15px solid var(--color-primary);
+  border-left: 15px solid map-get($map: $colores, $key: dark);
   transform: scale(20);
 }
 
 .call-to-action .cta-btn {
-  font-family: var(--font-primary);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -334,8 +310,8 @@
 }
 
 .call-to-action .cta-btn:hover {
-  background: var(--color-primary);
-  border: 2px solid var(--color-primary);
+  background: map-get($map: $colores, $key: claro);
+  border: 2px solid map-get($map: $colores, $key: claro);
 }
 
 @keyframes pulsate-btn {

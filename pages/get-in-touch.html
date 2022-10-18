@@ -30,28 +30,122 @@
 <body>
 
     <!-- apertura fila de logo + nav --> 
-
-    <header class="container-fluid">
+    <header class="container-fluid p-0">
         <!-- Navbar -->
-        <div class="row bg-info text-center">
-            <nav class="col navbar navbar-expand-lg navbar-light fixed-top py-3">
-                <div class="container-fluid px-4 px-lg-5">
+        <div class="row bg-info text-center p-0 m-0">
+            <nav class="col navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+                <div class="container-fluid px-4 px-lg-5 p-0 m-0">
                     <!-- logo -->
-                    <a class="navbar-brand" href="../index.html"><img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo"></a>
+                    <a class="navbar-brand" href="./index.html"><img class="navLogo" src="../assets/media/chopsionline.jpeg" alt="logo"></a>
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarResponsive">
                         <ul class="navbar-nav ms-auto my-2 my-lg-0">
                             <li class="nav-item"><a class="nav-link" href="../index.html">Who we are</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/services.html">Services</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/our-work.html">Our work</a></li>
-                            <li class="nav-item"><a class="nav-link active" href="./pages/get-in-touch.html">Get in touch</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../pages/join-the-team.html">Join the team</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./our-work.html">Our work</a></li>
+                            <li class="nav-item"><a class="nav-link active" href="./get-in-touch.html">Get in touch</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./join-the-team.html">Join the team</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </div>
-    </header>
+    
+      </header>
+
+
+    <!-- ======= Get Started Section ======= -->
+<section id="get-started" class="get-started section-bg"  style="background-image: url(../assets/media/mesh.svg);">
+    <div class="container">
+      <div class="row justify-content-between gy-4 benefitsofteam">
+
+        <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up">
+          <div class="content">
+            <h3>We are growth partners who care about you and your success</h3>
+            <p class="parrafo">Bring your ideas to life through whole-hearted human-centric design. Build sleek-looking, easy-to-maintain, scalable experiences with your users and business in mind.
+            <p class="parrafo">Quality and performance are non-negotiable. Collaborate with our team to create the right product for you, your business goals and your users.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6 img-bg" data-aos="fade" style="background-image: url(../assets/media/getintouch.svg);" data-aos="zoom-in" data-aos-delay="100"></div>
+
+      </div>
+
+    </div>
+  </section><!-- End Get Started Section -->
+
+
+
+
+        <!-- ======= About Section ======= -->
+        <section id="about" class="section-bg">
+            <div class="container-fluid jointheteam" data-aos="fade-up">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h1 class="mt-0">Let's Talk!</h1>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Ready to be part of our team? Send us your portfolio link and we will get back to you!</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 about-img" data-aos="fade-right" dat-aos-delay="100">
+                <img src="../assets/media/workwithus.png" alt="">
+                </div>
+
+                <div class="col-lg-6 content" data-aos="fade-left" dat-aos-delay="100">
+            <!-- Contact/Form-->
+            <section class="page-section">
+                <div class="container-flex animate__animated animate__bounceInRight">
+                    <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                        <div class="col-lg-6 pt-5">
+                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                    <label for="name">Full name</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                    <label for="email">Email address</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                    <label for="phone">Phone number</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                </div>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="link" type="url" placeholder="Attach your portfolio" style="height: 6rem" data-sb-validations="required"></textarea>
+                                    <label for="message">Tell us your position & attach your portfolio</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                </div>
+                                <!-- Submit success message-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Your message has been sent successfully. We’ll be in touch as soon as possible</div>
+                                    </div>
+                                </div>
+                                <!-- Submit error message-->
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                <!-- Submit Button-->
+                                <div class="d-grid"><button class="btn btn-xl disabled submitbutton" type="submit">Submit</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section><!-- End About Section -->
+
+
+
 
         <!-- Contact/Form-->
         <section class="page-section jointheteam animate__animated animate__bounceInUp">
@@ -115,7 +209,7 @@
                     <img class="rounded-circle" src="../assets/media/chopsionline.jpeg" height="50" alt="logo" />
                     </div>        
                     <p class="">We’re proud to be one of the world's best agencies</p>
-                    <a class="btn btn-primary btn-sm btn2" href="./pages/get-in-touch.html">GET IN TOUCH!</a>
+                    <a class="btn btn-sm btn2" href="./pages/get-in-touch.html">GET IN TOUCH!</a>
                 </div>
         
                 <!--links-->

@@ -1,115 +1,440 @@
 /*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/
-
-.benefitsofteam{
-    padding-top: 11rem;
+.benefitsofteam {
+  padding-top: 11rem;
 }
-
 
 .alt-services .img-bg {
-    background-size: cover;
-    background-position: center center;
-    min-height: 400px;
-  }
-  
-  .alt-services h3 {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--color-secondary);
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-  }
-  
-  .alt-services h3:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: var(--color-primary);
-    left: 0;
-    bottom: 0;
-  }
-  
-  .alt-services .icon-box {
-    margin-top: 50px;
-  }
-  
-  .alt-services .icon-box i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-primary);
-    margin-right: 25px;
-    font-size: 28px;
-    width: 56px;
-    height: 56px;
-    border-radius: 4px;
-    line-height: 0;
-    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
-    background-color: #fff;
-    transition: 0.3s;
-  }
-  
-  .alt-services .icon-box:hover i {
-    background-color: var(--color-primary);
-    color: #fff;
-  }
-  
-  .alt-services .icon-box h4 {
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .alt-services .icon-box h4 a {
-    color: #000;
-    transition: 0.3s;
-  }
-  
-  .alt-services .icon-box h4 a:hover {
-    color: var(--color-primary);
-  }
-  
-  .alt-services .icon-box p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-  
-  
-  .jointheteam{
-    padding-top: 11rem;
-    padding-bottom: calc(10rem - 4.5rem);
-    background-attachment: scroll;
-    background-size: cover;
-    height: 100vh;
-    div{
-        div{
-            div{
-                .divider{
-                    @include divider-verde;
-                }
-            }
-        }
-        div{
-            div{
-                form{
-                    // submit button
-                    div{
-                        .submitbutton{
-                            @include submit-button;
-                        }
-                    }
-                }
-            }
-        }
-    }   
+  background-size: cover;
+  background-position: center center;
+  min-height: 400px;
 }
 
-.divider{
-  @include divider-verde;
+.alt-services h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
 }
 
+.alt-services h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--color-primary);
+  left: 0;
+  bottom: 0;
+}
+
+.alt-services .icon-box {
+  margin-top: 50px;
+}
+
+.alt-services .icon-box i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: var(--color-primary);
+  margin-right: 25px;
+  font-size: 28px;
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  line-height: 0;
+  -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.08);
+  background-color: #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.alt-services .icon-box:hover i {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.alt-services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.alt-services .icon-box h4 a {
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.alt-services .icon-box h4 a:hover {
+  color: var(--color-primary);
+}
+
+.alt-services .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.jointheteam {
+  padding-top: 11rem;
+  padding-bottom: 5.5rem;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+}
+.jointheteam div div div .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #5BD1CA !important;
+  opacity: 1;
+  color: #5BD1CA !important;
+}
+.jointheteam div div div form div .submitbutton {
+  font-weight: 500;
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #5BD1CA !important;
+  border: 1px solid transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 100rem;
+  border-color: transparent;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+header {
+  z-index: 1100;
+}
+
+.navLogo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 1000px;
+  padding: 16px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .ourworkcontainer {
+    margin-bottom: 25rem !important;
+  }
+}
+@media (min-width: 329px) and (max-width: 532px) {
+  .ourworkcontainer {
+    margin-bottom: 28rem !important;
+  }
+}
+@media (max-width: 330px) {
+  .ourworkcontainer {
+    margin-bottom: 38rem !important;
+  }
+}
+section .services, section .ourwork {
+  padding-top: 11rem;
+  margin-bottom: 11rem !important;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 50vh;
+}
+section .services .divider, section .ourwork .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #5BD1CA !important;
+  opacity: 1;
+  color: #5BD1CA !important;
+}
+
+.serviceicon {
+  color: #5BD1CA !important;
+}
+
+@media (max-width: 990px) {
+  .services, .ourwork {
+    margin-bottom: 65rem !important;
+    padding-bottom: 11rem;
+  }
+}
+@media (max-width: 990px) {
+  .services, .ourwork, .servicescontainer {
+    margin-bottom: 24rem !important;
+  }
+}
+@media (max-width: 767px) {
+  .services, .ourwork, .servicescontainer {
+    margin-bottom: 44rem !important;
+  }
+}
+.masthead {
+  padding-top: 10rem;
+  padding-bottom: 5.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../assets/media/bgboot.svg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/media/bgboot.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+}
+.masthead div div div h1 {
+  font-size: 2.25rem;
+}
+.masthead div div div .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #5BD1CA !important;
+  opacity: 1;
+  color: #5BD1CA !important;
+}
+.masthead div div div #subtitle {
+  color: rgb(208, 208, 208) !important;
+  font-size: large;
+}
+.masthead div div div .btn1 {
+  font-weight: 500;
+  color: #8EE5E0 !important;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ffffff !important;
+  border: 1px solid transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 100rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  color: #ffffff !important;
+  background-color: #8EE5E0 !important;
+}
+
+#aboutus {
+  padding-top: 4rem;
+  margin-bottom: 4rem !important;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 50vh;
+}
+#aboutus .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #5BD1CA !important;
+  opacity: 1;
+  color: #5BD1CA !important;
+}
+
+.bulletpoint {
+  color: #22ccc3 !important;
+}
+
+section #mantra {
+  padding: 8rem 0;
+  margin-bottom: 1rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
+  background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
+}
+section #mantra div div .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #5BD1CA !important;
+  opacity: 1;
+  color: #5BD1CA !important;
+  color: #ffffff;
+}
+section #mantra div div #mantrasubtitle {
+  color: white;
+}
+section #mantra div div .btn2 {
+  font-weight: 500;
+  color: #8EE5E0 !important;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ffffff !important;
+  border: 1px solid transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 100rem;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+section #services {
+  padding: 4rem 0;
+}
+section #services .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: #5BD1CA !important;
+  opacity: 1;
+  color: #5BD1CA !important;
+}
+
+.serviceicon {
+  color: #5BD1CA !important;
+}
+
+.call-to-action .container {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cta-bg.jpg") center center;
+  background-size: cover;
+  padding: 100px 60px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.call-to-action h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.call-to-action p {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.call-to-action .play-btn {
+  width: 94px;
+  height: 94px;
+  margin-bottom: 20px;
+  background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.call-to-action .play-btn:before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation: pulsate-btn 2s;
+  animation: pulsate-btn 2s;
+  -webkit-animation-direction: forwards;
+  animation-direction: forwards;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: steps;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 131, 116, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.call-to-action .play-btn:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+          transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.call-to-action .play-btn:hover:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateX(-40%) translateY(-50%);
+          transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  -webkit-animation: none;
+  animation: none;
+  border-radius: 0;
+}
+
+.call-to-action .play-btn:hover:after {
+  border-left: 15px solid var(--color-primary);
+  -webkit-transform: scale(20);
+          transform: scale(20);
+}
+
+.call-to-action .cta-btn {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 48px;
+  border-radius: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.call-to-action .cta-btn:hover {
+  background: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0;
+  }
+}
