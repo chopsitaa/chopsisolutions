@@ -27,7 +27,6 @@ footer {
   display: inline-block;
   padding: 12px 48px;
   border-radius: 50px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #ffffff;
@@ -44,24 +43,15 @@ footer {
   .rounded-circle, .footerlinks {
     display: none;
   }
-
   .btn2 {
     margin-bottom: 0;
   }
-
   .icons {
     margin: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
-
   .footericons, .icons {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
 }
 body {
@@ -71,7 +61,6 @@ body {
 .masthead {
   padding-top: 10rem;
   padding-bottom: 5.5rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.1))), url("../assets/media/bgboot.svg");
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.1) 100%), url("../assets/media/bgboot.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -102,7 +91,6 @@ body {
   display: inline-block;
   padding: 12px 48px;
   border-radius: 50px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #22ccc3;
@@ -138,7 +126,6 @@ body {
 section #mantra {
   padding: 8rem 0;
   margin-bottom: 1rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
   background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
 }
 section #mantra div div .divider {
@@ -161,7 +148,6 @@ section #mantra div div .botondos {
   display: inline-block;
   padding: 12px 48px;
   border-radius: 50px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #ffffff;
@@ -213,7 +199,6 @@ section #services .divider {
   padding: 6px 30px 8px 30px;
   color: #22ccc3;
   border-radius: 50px;
-  -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
   text-decoration: none;
 }
@@ -234,7 +219,6 @@ section #services .divider {
   width: 100%;
   height: 100%;
   border: 1px solid rgba(55, 55, 63, 0.1);
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -245,14 +229,8 @@ section #services .divider {
   margin-bottom: 30px;
   background: #dffffd;
   border-radius: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   width: 64px;
   height: 64px;
@@ -272,7 +250,6 @@ section #services .divider {
 
 @media (min-width: 1200px) {
   .why-us .icon-box:hover {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
   }
 }
@@ -323,14 +300,8 @@ header {
 }
 
 .alt-services .icon-box i {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   color: #22ccc3;
   margin-right: 25px;
@@ -339,10 +310,8 @@ header {
   height: 56px;
   border-radius: 4px;
   line-height: 0;
-  -webkit-box-shadow: #5BD1CA;
   box-shadow: #5BD1CA;
   background-color: #fff;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -358,7 +327,6 @@ header {
 }
 
 .alt-services .icon-box h4 a {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -396,10 +364,7 @@ header {
   padding: 1rem 2.5rem;
   border-radius: 100rem;
   border-color: transparent;
-  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
 
 section #servicios {
@@ -435,7 +400,6 @@ section #servicios .divider {
   #about .about-img {
     height: auto;
   }
-
   #about .about-img img {
     margin-left: 0;
     padding-bottom: 30px;
@@ -505,7 +469,6 @@ body {
   font-weight: 600;
   line-height: 20px;
   margin-bottom: 5px;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -519,7 +482,6 @@ body {
 }
 
 .portfolio .portfolio-wrap {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
   overflow: hidden;
@@ -534,13 +496,11 @@ body {
   right: 0;
   top: 0;
   bottom: 0;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
   z-index: 2;
 }
 
 .portfolio .portfolio-wrap img {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   position: relative;
   z-index: 1;
@@ -554,7 +514,6 @@ body {
   text-align: center;
   z-index: 3;
   position: absolute;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -570,7 +529,6 @@ body {
   width: 32px;
   height: 32px;
   display: inline-block;
-  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -592,7 +550,6 @@ body {
   right: 0;
   text-align: center;
   z-index: 3;
-  -webkit-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 
@@ -652,8 +609,7 @@ body {
 
 .portfolio-details .portfolio-info {
   padding: 30px;
-  -webkit-box-shadow: 0px 0 30px rgba(122, 105, 96, 0.08);
-          box-shadow: 0px 0 30px rgba(122, 105, 96, 0.08);
+  box-shadow: 0px 0 30px rgba(122, 105, 96, 0.08);
 }
 
 .portfolio-details .portfolio-info h3 {
@@ -689,7 +645,6 @@ body {
 }
 
 .call-to-action .container {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../assets/media/videobg.svg") center center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/media/videobg.svg") center center;
   background-size: cover;
   padding: 100px 60px;
@@ -714,7 +669,6 @@ body {
   width: 94px;
   height: 94px;
   margin-bottom: 20px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#5BD1CA), color-stop(190.65%, rgba(91, 209, 202, 0)));
   background: linear-gradient(180deg, #5BD1CA 0%, rgba(91, 209, 202, 0) 190.65%);
   border-radius: 50%;
   display: inline-block;
@@ -750,15 +704,13 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateX(-40%) translateY(-50%);
-          transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-left: 15px solid #fff;
   z-index: 100;
-  -webkit-transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
   transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
@@ -767,8 +719,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateX(-40%) translateY(-50%);
-          transform: translateX(-40%) translateY(-50%);
+  transform: translateX(-40%) translateY(-50%);
   width: 0;
   height: 0;
   border: none;
@@ -783,8 +734,7 @@ body {
 
 .call-to-action .play-btn:hover:after {
   border-left: 15px solid #22ccc3;
-  -webkit-transform: scale(20);
-          transform: scale(20);
+  transform: scale(20);
 }
 
 .call-to-action .cta-btn {
@@ -795,7 +745,6 @@ body {
   display: inline-block;
   padding: 12px 48px;
   border-radius: 50px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin: 10px;
   border: 2px solid #fff;
@@ -809,26 +758,22 @@ body {
 
 @-webkit-keyframes pulsate-btn {
   0% {
-    -webkit-transform: scale(0.6, 0.6);
-            transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
     opacity: 0;
   }
 }
 
 @keyframes pulsate-btn {
   0% {
-    -webkit-transform: scale(0.6, 0.6);
-            transform: scale(0.6, 0.6);
+    transform: scale(0.6, 0.6);
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
     opacity: 0;
   }
 }
@@ -836,8 +781,7 @@ body {
   .portfolio-links {
     display: none;
   }
-
   .portfolio-item {
     cursor: pointer;
   }
-}
+}/*# sourceMappingURL=style.css.map */
