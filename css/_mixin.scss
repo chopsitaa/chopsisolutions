@@ -1,21 +1,4 @@
-@mixin submit-button {
-    font-weight: 500;
-    color: map-get($colores, "blanco") !important;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: map-get($colores, "claro") !important;
-    border: 1px solid transparent;
-    padding: 1rem 2.5rem;
-    border-radius: 100rem;
-    border-color: transparent;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    box-shadow: 0px 12px 15px rgba(18, 38, 63, 0.05);
-    :hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-}
+// dividers
 
 @mixin divider-verde {
     height: 0.2rem;
@@ -31,33 +14,8 @@
     color: map-get($colores, "blanco");
 }
 
-@mixin btn-blanco {
-    font-weight: 500;
-    color: map-get($colores, "oscuro") !important; 
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: map-get($colores, "blanco") !important;
-    border: 1px solid transparent !important;
-    padding: 1rem 2.5rem;
-    border-radius: 100rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
 
-@mixin btn-verde {
-    @include btn-blanco;
-    color: map-get($colores, "blanco") !important; 
-    background-color: map-get($colores, "oscuro") !important;
-    box-shadow: 0px 12px 15px rgba(18, 38, 63, 0.05);
-    -webkit-transition-duration: 0.3s;
-    -webkit-transition-property: box-shadow, transform;
-    transition-property: box-shadow, transform;
-    :hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-    }
-}
-
+// botones
 
 @mixin boton-transparente {
     font-weight: 500;

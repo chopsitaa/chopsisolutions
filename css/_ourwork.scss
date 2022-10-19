@@ -326,3 +326,16 @@ body{
     opacity: 0;
   }
 }
+
+
+// media querys
+@media (max-width: 1199px) {
+  .portfolio-links{
+    display: none;
+  }
+
+  .portfolio-item{
+    cursor: pointer
+    
+  }
+}
