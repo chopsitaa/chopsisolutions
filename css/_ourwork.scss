@@ -95,7 +95,7 @@ body{
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
   background: map-get($map: $colores, $key: dark);
-  color: #fff;
+  color: white;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
@@ -329,13 +329,14 @@ body{
 
 
 // media querys
-@media (max-width: 1199px) {
-  .portfolio-links{
+@media (min-width: 768px) and (max-width: 1199px) {
+  .client{
     display: none;
   }
+}
 
-  .portfolio-item{
-    cursor: pointer
-    
+@media (max-width: 375px){
+  .client{
+    display: none;
   }
 }

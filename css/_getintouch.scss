@@ -1,119 +1,45 @@
-
-// benefits of being part of the team
-.benefitsofteam {
-    padding-top: 11rem;
-  }
-  
-  .alt-services .img-bg {
-    background-size: cover;
-    background-position: center center;
-    min-height: 400px;
-  }
-  
-  .alt-services h3 {
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-  }
-  
-  .alt-services h3:after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: map-get($map: $colores, $key: claro);
-    left: 0;
-    bottom: 0;
-  }
-  
-  .alt-services .icon-box {
-    margin-top: 50px;
-  }
-  
-  .alt-services .icon-box i {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: map-get($map: $colores, $key: dark);
-    margin-right: 25px;
-    font-size: 28px;
-    width: 56px;
-    height: 56px;
-    border-radius: 4px;
-    line-height: 0;
-    -webkit-box-shadow: map-get($map: $colores, $key: claro);
-            box-shadow: map-get($map: $colores, $key: claro);
-    background-color: #fff;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .alt-services .icon-box:hover i {
-    background-color: map-get($map: $colores, $key: dark);
-    color: map-get($map: $colores, $key: blanco);
-  }
-  
-  .alt-services .icon-box h4 {
-    font-weight: 700;
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .alt-services .icon-box h4 a {
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-  }
-  
-  .alt-services .icon-box p {
-    line-height: 24px;
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-
-
-
 // join the team form (= as get in touch - repeated code JIC)
 
 .jointheteam {
-    padding-top: 11rem;
-    padding-bottom: 5.5rem;
-    background-attachment: scroll;
-    background-size: cover;
-    height: 100vh;
-  }
-  
-  .jointheteam div div div .divider {
-    height: 0.2rem;
-    max-width: 3.25rem;
-    margin: 1.5rem auto;
-    background-color: map-get($map: $colores, $key: dark) !important;
-    opacity: 1;
-    color: map-get($map: $colores, $key: dark) !important;
-  }
-  
-  .jointheteam div div div form div .submitbutton {
-    font-weight: 500;
-    color: #ffffff !important;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    background-color: #5BD1CA !important;
-    border: 1px solid transparent;
-    padding: 1rem 2.5rem;
-    border-radius: 100rem;
-    border-color: transparent;
-    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-  }
-  
+  padding-top: 11rem;
+  padding-bottom: 5.5rem;
+  background-attachment: scroll;
+  background-size: cover;
+  height: 100vh;
+}
+
+.jointheteam div div div .divider {
+  height: 0.2rem;
+  max-width: 3.25rem;
+  margin: 1.5rem auto;
+  background-color: map-get($map: $colores, $key: dark) !important;
+  opacity: 1;
+  color: map-get($map: $colores, $key: dark) !important;
+}
+
+.jointheteam div div div form div .submitbutton {
+  font-weight: 500;
+  color: #ffffff !important;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #5bd1ca !important;
+  border: 1px solid transparent;
+  padding: 1rem 2.5rem;
+  border-radius: 100rem;
+  border-color: transparent;
+  -webkit-transition: color 0.15s ease-in-out,
+    background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+
+
+
